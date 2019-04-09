@@ -45,14 +45,19 @@ namespace MyDotNetProject
                 Console.WriteLine(stopwatch.ElapsedMilliseconds);
             }
         }
-    }
 
-    public class MyClass
-    {
-        //[MethodImpl(MethodImplOptions.NoInlining)]
-        public void MyFunc()
+        public void CodeSnippet1()
         {
 
+        }
+
+        public class MyClass
+        {
+            //[MethodImpl(MethodImplOptions.NoInlining)]
+            public void MyFunc()
+            {
+
+            }
         }
     }
 }
