@@ -7,6 +7,9 @@ namespace MyDotNetProject
 {
     public class ReflectionTests
     {
+        /// <summary>
+        /// 获取方法体的IL字节数组
+        /// </summary>
         public void CodeSnippet1()
         {
             byte[] ils = typeof(MyClass).GetMethod("MyFunc").GetMethodBody().GetILAsByteArray();

@@ -8,6 +8,9 @@ namespace MyDotNetProject
 {
     class ExceptionTests
     {
+        /// <summary>
+        /// 测试异常的执行流程
+        /// </summary>
         public static void Test1()
         {
             try

@@ -7,6 +7,9 @@ namespace MyDotNetProject
 {
     public class DelegateTests
     {
+        /// <summary>
+        /// 测试直接调用方法、通过反射调用方法和使用委托调用方法的效率
+        /// </summary>
         public void Test1()
         {
             int times = 10000000;
