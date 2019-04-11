@@ -10,7 +10,7 @@ namespace MyDotNetProject
     public class StaticMemberTests
     {
         /// <summary>
-        /// 测试CLR保证静态构造函数线程安全
+        /// 测试CLR保证静态构造函数线程安全，静态构造函数的耗时操作会阻塞所有正在调用该静态构造函数的线程
         /// </summary>
         public void Test1()
         {
