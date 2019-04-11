@@ -9,7 +9,7 @@ namespace MyDotNetProject
     public class ConstructorTests
     {
         /// <summary>
-        /// 测试构造函数执行顺序
+        /// 测试实例构造函数和实例字段、静态字段的执行顺序
         /// </summary>
         public void Test1()
         {
@@ -24,8 +24,8 @@ namespace MyDotNetProject
 
             public void MyFunc()
             {
-                Console.WriteLine($"{nameof(MyStaticStr)}: " + (MyStaticStr == null ? "null" : MyStaticStr));
-                Console.WriteLine($"{nameof(myStr)}: " + myStr);
+                Console.WriteLine($"{nameof(MyStaticStr)}: {(MyStaticStr == null ? "null" : MyStaticStr)}");
+                Console.WriteLine($"{nameof(myStr)}: {myStr}");
             }
         }
     }

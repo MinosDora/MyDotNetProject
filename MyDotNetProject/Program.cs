@@ -10,7 +10,9 @@ namespace MyDotNetProject
     {
         static void Main(string[] args)
         {
-            new DelegateTests().Test1();
+            //new ConstructorTests().Test1();
+            //new StaticMemberTests().Test1();
+            //new DelegateTests().Test1();
 
             Console.Read();
         }

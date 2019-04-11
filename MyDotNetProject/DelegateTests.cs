@@ -49,9 +49,16 @@ namespace MyDotNetProject
             }
         }
 
-        public void CodeSnippet1()
+        /// <summary>
+        /// 测试委托增删后会创建新的委托实例
+        /// </summary>
+        public void Test2()
         {
-
+            MyClass myClass = new MyClass();
+            Action action = myClass.MyFunc;
+            Console.WriteLine(action.GetHashCode());
+            action += myClass.MyFunc;
+            Console.WriteLine(action.GetHashCode());
         }
 
         public class MyClass

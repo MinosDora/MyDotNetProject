@@ -54,6 +54,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionTests.cs" />
+    <Compile Include="RefLocalsAndRefReturnsTests.cs" />
+    <Compile Include="StaticMemberTests.cs" />
     <Compile Include="StringTests.cs" />
     <Compile Include="UnsafeCodeTests.cs" />
   </ItemGroup>
