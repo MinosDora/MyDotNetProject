@@ -13,6 +13,7 @@ namespace MyDotNetProject
             //new ConstructorTests().Test1();
             //new StaticMemberTests().Test1();
             //new DelegateTests().Test1();
+            //new CovarianceTests().Test1();
 
             Console.Read();
         }
