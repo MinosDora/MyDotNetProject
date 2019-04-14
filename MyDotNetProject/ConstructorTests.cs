@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 构造函数
+    /// </summary>
     public class ConstructorTests
     {
         /// <summary>

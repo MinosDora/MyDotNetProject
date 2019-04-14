@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 协变与逆变
+    /// </summary>
     public class CovarianceTests
     {
         /// <summary>

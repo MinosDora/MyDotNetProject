@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 反射
+    /// </summary>
     public class ReflectionTests
     {
         /// <summary>

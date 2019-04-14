@@ -5,6 +5,9 @@ using System.Runtime.CompilerServices;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 委托
+    /// </summary>
     public class DelegateTests
     {
         /// <summary>

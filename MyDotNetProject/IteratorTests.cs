@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 迭代器
+    /// </summary>
     public class IteratorTests
     {
         /// <summary>

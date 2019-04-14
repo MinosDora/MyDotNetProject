@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 字符串
+    /// </summary>
     public class StringTests
     {
         /// <summary>

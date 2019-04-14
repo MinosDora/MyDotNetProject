@@ -6,6 +6,9 @@ using System.Runtime.Serialization;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 异常
+    /// </summary>
     class ExceptionTests
     {
         /// <summary>

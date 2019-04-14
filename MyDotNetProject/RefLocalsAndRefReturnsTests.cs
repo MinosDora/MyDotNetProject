@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 引用局部变量和引用返回值
+    /// </summary>
     public class RefLocalsAndRefReturnsTests
     {
         /// <summary>

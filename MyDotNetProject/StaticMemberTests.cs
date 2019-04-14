@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 静态成员
+    /// </summary>
     public class StaticMemberTests
     {
         /// <summary>

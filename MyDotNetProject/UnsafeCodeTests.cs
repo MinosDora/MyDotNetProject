@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace MyDotNetProject
 {
+    /// <summary>
+    /// 不安全代码
+    /// </summary>
     public unsafe class UnsafeCodeTests
     {
         /// <summary>
