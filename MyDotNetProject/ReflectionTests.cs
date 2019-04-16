@@ -24,7 +24,6 @@ namespace MyDotNetProject
             }
             Console.WriteLine(stringBuilder);
         }
-
         public class MyClass
         {
             public void MyFunc()

@@ -14,7 +14,7 @@ namespace MyDotNetProject
         /// <summary>
         /// 测试异常的执行流程
         /// </summary>
-        public static void Test1()
+        public void Test1()
         {
             try
             {

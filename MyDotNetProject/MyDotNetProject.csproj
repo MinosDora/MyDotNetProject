@@ -52,6 +52,7 @@
     <Compile Include="DelegateTests.cs" />
     <Compile Include="ExceptionTests.cs" />
     <Compile Include="IteratorTests.cs" />
+    <Compile Include="OOPTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionTests.cs" />
