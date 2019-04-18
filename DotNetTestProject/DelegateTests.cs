@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using MinoHelper;
 
 namespace DotNetTestProject
 {
@@ -17,16 +18,14 @@ namespace DotNetTestProject
         {
             int times = 10000000;
             MyClass myObj = new MyClass();
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-            for (int i = 0; i < times; i++)
+            using (StopwatchHelper.CreateStopwatch())
             {
-                myObj.MyFunc();
+                for (int i = 0; i < times; i++)
+                {
+                    myObj.MyFunc();
+                }
             }
-            stopwatch.Stop();
-            Console.WriteLine(stopwatch.ElapsedMilliseconds);
-
-            stopwatch.Restart();
+            using (StopwatchHelper.CreateStopwatch())
             {
                 Type myType = typeof(MyClass);
                 MethodInfo methodInfo = myType.GetMethod("MyFunc");
@@ -34,11 +33,9 @@ namespace DotNetTestProject
                 {
                     methodInfo.Invoke(myObj, null);
                 }
-                stopwatch.Stop();
-                Console.WriteLine(stopwatch.ElapsedMilliseconds);
             }
 
-            stopwatch.Restart();
+            using (StopwatchHelper.CreateStopwatch())
             {
                 Type myType = typeof(MyClass);
                 MethodInfo methodInfo = myType.GetMethod("MyFunc");
@@ -47,8 +44,6 @@ namespace DotNetTestProject
                 {
                     action();
                 }
-                stopwatch.Stop();
-                Console.WriteLine(stopwatch.ElapsedMilliseconds);
             }
         }
 
