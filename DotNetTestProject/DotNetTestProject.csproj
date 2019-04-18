@@ -65,9 +65,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MinoHelper\MinoHelper.csproj">
+    <ProjectReference Include="..\MinoTool\MinoTool.csproj">
       <Project>{240bacad-a830-4bac-9d1d-41440edc99e0}</Project>
-      <Name>MinoHelper</Name>
+      <Name>MinoTool</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

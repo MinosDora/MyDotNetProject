@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTestProject", "DotNetTestProject\DotNetTestProject.csproj", "{FA66CFB7-9D39-4E90-8150-5CBFBF01958D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinoHelper", "MinoHelper\MinoHelper.csproj", "{240BACAD-A830-4BAC-9D1D-41440EDC99E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinoTool", "MinoTool\MinoTool.csproj", "{240BACAD-A830-4BAC-9D1D-41440EDC99E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
