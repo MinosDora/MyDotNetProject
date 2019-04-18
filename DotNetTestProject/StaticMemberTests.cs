@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MyDotNetProject
+namespace DotNetTestProject
 {
     /// <summary>
     /// 静态成员

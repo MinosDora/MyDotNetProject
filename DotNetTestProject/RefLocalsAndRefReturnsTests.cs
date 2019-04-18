@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyDotNetProject
+namespace DotNetTestProject
 {
     /// <summary>
     /// 引用局部变量和引用返回值

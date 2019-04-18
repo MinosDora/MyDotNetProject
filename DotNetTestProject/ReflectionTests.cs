@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyDotNetProject
+namespace DotNetTestProject
 {
     /// <summary>
     /// 反射

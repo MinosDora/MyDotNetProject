@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MyDotNetProject
+namespace DotNetTestProject
 {
     /// <summary>
     /// 不安全代码

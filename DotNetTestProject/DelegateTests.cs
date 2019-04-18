@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-namespace MyDotNetProject
+namespace DotNetTestProject
 {
     /// <summary>
     /// 委托

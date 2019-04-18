@@ -4,7 +4,7 @@ using System.IO;
 using System.Threading;
 using System.Runtime.Serialization;
 
-namespace MyDotNetProject
+namespace DotNetTestProject
 {
     /// <summary>
     /// 异常
