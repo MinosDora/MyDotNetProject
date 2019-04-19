@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FA66CFB7-9D39-4E90-8150-5CBFBF01958D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MyDotNetProject</RootNamespace>
-    <AssemblyName>MyDotNetProject</AssemblyName>
+    <RootNamespace>DotNetTestProject</RootNamespace>
+    <AssemblyName>DotNetTestProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,6 +52,7 @@
     <Compile Include="DelegateTests.cs" />
     <Compile Include="ExceptionTests.cs" />
     <Compile Include="IteratorTests.cs" />
+    <Compile Include="MinoToolTests.cs" />
     <Compile Include="OOPTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

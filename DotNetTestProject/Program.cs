@@ -21,6 +21,14 @@ namespace DotNetTestProject
             //new UnsafeCodeTests().CodeSnippet1();
             //new ReflectionTests().CodeSnippet1();
 
+            #region MinoTool Tests
+            //MinoToolTests.StopwatchUtilTests.CreateStopwatchTest();
+            MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
+            MinoToolTests.DateTimeUtilTests.DateTimeToLongTimeStampTest();
+            MinoToolTests.DateTimeUtilTests.TimeStampToDateTimeTest();
+            MinoToolTests.DateTimeUtilTests.LongTimeStampToDateTimeTest();
+            #endregion
+
             Console.Read();
         }
     }
