@@ -23,10 +23,10 @@ namespace DotNetTestProject
 
             #region MinoTool Tests
             //MinoToolTests.StopwatchUtilTests.CreateStopwatchTest();
-            MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
-            MinoToolTests.DateTimeUtilTests.DateTimeToLongTimeStampTest();
-            MinoToolTests.DateTimeUtilTests.TimeStampToDateTimeTest();
-            MinoToolTests.DateTimeUtilTests.LongTimeStampToDateTimeTest();
+            //MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
+            //MinoToolTests.DateTimeUtilTests.DateTimeToLongTimeStampTest();
+            //MinoToolTests.DateTimeUtilTests.TimeStampToDateTimeTest();
+            //MinoToolTests.DateTimeUtilTests.LongTimeStampToDateTimeTest();
             #endregion
 
             Console.Read();
