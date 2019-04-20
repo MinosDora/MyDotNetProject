@@ -23,29 +23,31 @@ namespace DotNetTestProject
             myBaseClass.MyFunc2();
             myClass.MyFunc1();
             myClass.MyFunc2();
+            Console.WriteLine($"{nameof(myClass)}'s num is {myClass.num}.");
+            Console.WriteLine($"{nameof(myBaseClass)}'s num is {myBaseClass.num}.");
         }
         class MyBaseClass
         {
-            int num = 10;
+            public int num = 10;
             public virtual void MyFunc1()
             {
-                Console.WriteLine($"{nameof(MyBaseClass)}'s {nameof(MyFunc1)} is called.");
+                Console.WriteLine($"{nameof(MyBaseClass)}'s {nameof(MyFunc1)} is called, num is {num}.");
             }
             public void MyFunc2()
             {
-                Console.WriteLine($"{nameof(MyBaseClass)}'s num is {num}.");
+                Console.WriteLine($"{nameof(MyBaseClass)}'s {nameof(MyFunc1)} is called, num is {num}.");
             }
         }
         class MyClass : MyBaseClass
         {
-            int num = 20;
+            public new int num = 20;
             public override void MyFunc1()
             {
-                Console.WriteLine($"{nameof(MyClass)}'s {nameof(MyFunc1)} is called.");
+                Console.WriteLine($"{nameof(MyClass)}'s {nameof(MyFunc1)} is called, num is {num}.");
             }
             public new void MyFunc2()
             {
-                Console.WriteLine($"{nameof(MyClass)}'s num is {num}.");
+                Console.WriteLine($"{nameof(MyClass)}'s {nameof(MyFunc1)} is called, num is {num}.");
             }
         }
     }
