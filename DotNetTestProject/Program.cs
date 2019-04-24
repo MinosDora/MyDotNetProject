@@ -22,11 +22,14 @@ namespace DotNetTestProject
             //new ReflectionTests().CodeSnippet1();
 
             #region MinoTool Tests
-            //MinoToolTests.StopwatchUtilTests.CreateStopwatchTest();
             //MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
             //MinoToolTests.DateTimeUtilTests.DateTimeToLongTimeStampTest();
             //MinoToolTests.DateTimeUtilTests.TimeStampToDateTimeTest();
             //MinoToolTests.DateTimeUtilTests.LongTimeStampToDateTimeTest();
+            //MinoToolTests.EnumUtilTests.GetNameTest();
+            //MinoToolTests.EnumUtilTests.GetEnumTest();
+            //MinoToolTests.EnumUtilTests.GetValueTest();
+            //MinoToolTests.StopwatchUtilTests.CreateStopwatchTest();
             #endregion
 
             Console.Read();
