@@ -14,7 +14,6 @@ namespace DotNetTestProject
         {
             new MyClass().MyFunc();
         }
-
         public class MyClass
         {
             public int myNum = MyStaticNum2;  //10
@@ -26,6 +25,28 @@ namespace DotNetTestProject
                 Console.WriteLine($"{nameof(MyStaticNum1)}: {MyStaticNum1}");
                 Console.WriteLine($"{nameof(MyStaticNum2)}: {MyStaticNum2}");
                 Console.WriteLine($"{nameof(myNum)}: {myNum}");
+            }
+        }
+
+        /// <summary>
+        /// 测试构造函数的执行顺序，通过查看IL代码更加直观
+        /// </summary>
+        public void Test2()
+        {
+            new MyClass1();
+        }
+        public class BaseClass
+        {
+            public BaseClass()  //断点，执行顺序2
+            {
+                Console.WriteLine(nameof(BaseClass));  //断点，执行顺序3
+            }
+        }
+        public class MyClass1 : BaseClass
+        {
+            public MyClass1()  //断点，执行顺序1
+            {
+                Console.WriteLine(nameof(MyClass1));  //断点，执行顺序4
             }
         }
     }
