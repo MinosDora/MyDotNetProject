@@ -54,6 +54,7 @@
     <Compile Include="ExceptionTests.cs" />
     <Compile Include="IteratorTests.cs" />
     <Compile Include="MinoToolTests.cs" />
+    <Compile Include="ObjectCopyTests.cs" />
     <Compile Include="OOPTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -21,5 +21,18 @@ namespace DotNetTestProject
             Console.WriteLine(object.ReferenceEquals(str, str1));   //False
             Console.WriteLine(object.ReferenceEquals(str, str3));   //True
         }
+
+        /// <summary>
+        /// 测试字符串的不可变性
+        /// </summary>
+        public void Test2()
+        {
+            string str1 = "Hello";
+            string str2 = str1;
+            string str3 = str1.Substring(0, 2);
+            Console.WriteLine(str1);
+            Console.WriteLine(str2);
+            Console.WriteLine(str3);
+        }
     }
 }
