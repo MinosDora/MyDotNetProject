@@ -21,14 +21,15 @@ namespace DotNetTestProject
 
         public class MyClass
         {
-            public static string MyStaticStr = MyStaticStr1;    //null
-            public static string MyStaticStr1 = "10";
-            private string myStr = MyStaticStr1;                //"10"
+            public int myNum = MyStaticNum2;  //10
+            public static int MyStaticNum1 = MyStaticNum2;  //0
+            public static int MyStaticNum2 = 10;
 
             public void MyFunc()
             {
-                Console.WriteLine($"{nameof(MyStaticStr)}: {(MyStaticStr == null ? "null" : MyStaticStr)}");
-                Console.WriteLine($"{nameof(myStr)}: {myStr}");
+                Console.WriteLine($"{nameof(MyStaticNum1)}: {MyStaticNum1}");
+                Console.WriteLine($"{nameof(MyStaticNum2)}: {MyStaticNum2}");
+                Console.WriteLine($"{nameof(myNum)}: {myNum}");
             }
         }
     }
