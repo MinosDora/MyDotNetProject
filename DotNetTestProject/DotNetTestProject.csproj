@@ -61,7 +61,9 @@
     <Compile Include="RefLocalsAndRefReturnsTests.cs" />
     <Compile Include="StaticMemberTests.cs" />
     <Compile Include="StringTests.cs" />
+    <Compile Include="TypeConversionTests.cs" />
     <Compile Include="UnsafeCodeTests.cs" />
+    <Compile Include="VariableTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

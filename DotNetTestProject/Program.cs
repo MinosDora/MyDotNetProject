@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Threading;
 using MinoTool;
 
 namespace DotNetTestProject
@@ -9,6 +7,11 @@ namespace DotNetTestProject
     {
         static void Main(string[] args)
         {
+            //new VariableTests().Test1();
+            //new TypeConversionTests().Test1();
+            //new TypeConversionTests().Test2();
+            //new TypeConversionTests().Test3();
+            //new TypeConversionTests().Test4();
             //new StringTests().Test1();
             //new RefLocalsAndRefReturnsTests().CodeSnippet1();
             //new OOPTests().Test1();
