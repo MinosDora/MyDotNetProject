@@ -62,6 +62,7 @@
     <Compile Include="StaticMemberTests.cs" />
     <Compile Include="StringTests.cs" />
     <Compile Include="TypeConversionTests.cs" />
+    <Compile Include="TypeObjectTests.cs" />
     <Compile Include="UnsafeCodeTests.cs" />
     <Compile Include="VariableTests.cs" />
   </ItemGroup>

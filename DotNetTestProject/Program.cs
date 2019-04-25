@@ -22,6 +22,7 @@ namespace DotNetTestProject
             //new ExceptionTests().Test1();
             //new UnsafeCodeTests().CodeSnippet1();
             //new ReflectionTests().CodeSnippet1();
+            //new TypeObjectTests().Test1();
 
             #region MinoTool Tests
             //MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
