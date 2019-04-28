@@ -52,6 +52,7 @@
     <Compile Include="ConstructorTests.cs" />
     <Compile Include="CovarianceTests.cs" />
     <Compile Include="DelegateTests.cs" />
+    <Compile Include="EnumTests.cs" />
     <Compile Include="ExceptionTests.cs" />
     <Compile Include="IteratorTests.cs" />
     <Compile Include="MinoToolTests.cs" />
