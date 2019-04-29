@@ -54,6 +54,7 @@
     <Compile Include="DelegateTests.cs" />
     <Compile Include="EnumTests.cs" />
     <Compile Include="ExceptionTests.cs" />
+    <Compile Include="ExpressionBodyTests.cs" />
     <Compile Include="IteratorTests.cs" />
     <Compile Include="MinoToolTests.cs" />
     <Compile Include="ObjectCopyTests.cs" />
