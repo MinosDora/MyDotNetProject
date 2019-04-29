@@ -7,6 +7,7 @@ namespace DotNetTestProject
         static void Main(string[] args)
         {
             //new OperatorTests().Test1();
+            new OperatorTests().Test2();
             //new VariableTests().Test1();
             //new TypeConversionTests().Test1();
             //new TypeConversionTests().Test2();

@@ -18,5 +18,17 @@ namespace DotNetTestProject
             Console.WriteLine(typeof(int*));
             Console.WriteLine(Marshal.SizeOf(typeof(int*)));
         }
+
+        /// <summary>
+        /// 测试位移运算
+        /// </summary>
+        public void Test2()
+        {
+            Console.WriteLine(BitConverter.IsLittleEndian);
+            int num = -1;
+            Console.WriteLine(string.Join("", BitConverter.GetBytes(1)));
+            Console.WriteLine(num << 1);
+            Console.WriteLine(string.Join("", BitConverter.GetBytes(num - 1)));
+        }
     }
 }
