@@ -20,6 +20,5 @@ namespace DotNetTestProject
             Console.WriteLine((int)&c);
             Console.WriteLine(*(&b));
         }
-
     }
 }

@@ -21,9 +21,6 @@ namespace DotNetTestProject
                 Console.WriteLine(this.MemberwiseClone().GetType());
             }
         }
-        class MyClass : MyBaseClass
-        {
-
-        }
+        class MyClass : MyBaseClass { }
     }
 }
