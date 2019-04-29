@@ -6,6 +6,7 @@ namespace DotNetTestProject
     {
         static void Main(string[] args)
         {
+            new OperatorTests().Test1();
             //new VariableTests().Test1();
             //new TypeConversionTests().Test1();
             //new TypeConversionTests().Test2();
@@ -22,6 +23,7 @@ namespace DotNetTestProject
             //new ConstructorTests().Test2();
             //new StaticMemberTests().Test1();
             //new DelegateTests().Test1();
+            //new GenericTests().Test1();
             //new IteratorTests().CodeSnippet1();
             //new CovarianceTests().Test1();
             //new ExceptionTests().Test1();

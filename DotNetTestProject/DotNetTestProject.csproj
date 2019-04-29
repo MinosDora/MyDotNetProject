@@ -55,10 +55,12 @@
     <Compile Include="EnumTests.cs" />
     <Compile Include="ExceptionTests.cs" />
     <Compile Include="ExpressionBodyTests.cs" />
+    <Compile Include="GenericTests.cs" />
     <Compile Include="IteratorTests.cs" />
     <Compile Include="MinoToolTests.cs" />
     <Compile Include="ObjectCopyTests.cs" />
     <Compile Include="OOPTests.cs" />
+    <Compile Include="OperatorTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionTests.cs" />
