@@ -11,10 +11,11 @@ namespace DotNetTestProject
         /// <summary>
         /// 测试sizeof(T)和Marshal.SizeOf()区别
         /// </summary>
-        public unsafe void Test1()
+        public void Test1()
         {
             Console.WriteLine(sizeof(int));
             Console.WriteLine(Marshal.SizeOf<int>());
+            Console.WriteLine(typeof(int*));
             Console.WriteLine(Marshal.SizeOf(typeof(int*)));
         }
     }
