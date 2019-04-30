@@ -16,6 +16,14 @@ namespace DotNetTestProject
             MyEnum myEnum2 = myEnum | MyEnum.MyEnum2;
             MyFunc(myEnum2);
         }
+
+        /// <summary>
+        /// 测试枚举没有枚举数=0的情况时的默认值
+        /// </summary>
+        public void Test2()
+        {
+            Console.WriteLine(default(MyEnum));
+        }
         public static void MyFunc(MyEnum my)
         {
             Console.WriteLine(my);

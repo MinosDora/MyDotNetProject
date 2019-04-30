@@ -26,9 +26,9 @@ namespace DotNetTestProject
         {
             Console.WriteLine(BitConverter.IsLittleEndian);
             int num = -1;
-            Console.WriteLine(string.Join("", BitConverter.GetBytes(1)));
+            Console.WriteLine(Convert.ToString(num, 2));
             Console.WriteLine(num << 1);
-            Console.WriteLine(string.Join("", BitConverter.GetBytes(num - 1)));
+            Console.WriteLine(Convert.ToString(num << 1, 2));
         }
     }
 }

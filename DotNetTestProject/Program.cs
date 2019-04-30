@@ -15,6 +15,8 @@ namespace DotNetTestProject
             //new TypeConversionTests().Test4();
             //new BoxAndUnBoxTests().Test1();
             //new BoxAndUnBoxTests().Test2();
+            //new EnumTests().Test1();
+            //new EnumTests().Test2();
             //new StringTests().Test1();
             //new StringTests().Test2();
             //new RefLocalsAndRefReturnsTests().CodeSnippet1();
