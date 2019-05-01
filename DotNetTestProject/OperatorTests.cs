@@ -30,5 +30,18 @@ namespace DotNetTestProject
             Console.WriteLine(num << 1);
             Console.WriteLine(Convert.ToString(num << 1, 2));
         }
+
+        /// <summary>
+        /// 测试前缀/后缀递增运算
+        /// </summary>
+        public void Test3()
+        {
+            int num = 10;
+            // TODO 结果是121，没有按照运算符优先级来
+            num = ++num + num++ * 10;
+            Console.WriteLine(num);
+            num = 10;
+            Console.WriteLine(++num + 10);
+        }
     }
 }
