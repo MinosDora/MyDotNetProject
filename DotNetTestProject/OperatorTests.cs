@@ -37,8 +37,7 @@ namespace DotNetTestProject
         public void Test3()
         {
             int num = 10;
-            // TODO 结果是121，没有按照运算符优先级来
-            num = ++num + num++ * 10;
+            num = ++num + num++ * 10;  //121
             Console.WriteLine(num);
             num = 10;
             Console.WriteLine(++num + 10);
