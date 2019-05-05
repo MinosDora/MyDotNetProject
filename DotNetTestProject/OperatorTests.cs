@@ -37,7 +37,7 @@ namespace DotNetTestProject
         public void Test3()
         {
             int num = 10;
-            num = ++num + num++ * 10;  //121
+            num = ++num + num++ * 10;  //121：11 + 11 * 10
             Console.WriteLine(num);
             num = 10;
             Console.WriteLine(++num + 10);
