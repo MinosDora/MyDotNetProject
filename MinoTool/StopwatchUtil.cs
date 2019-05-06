@@ -12,6 +12,7 @@ namespace MinoTool
         /// 计时器结束事件
         /// </summary>
         private static Action<Stopwatch> OnStopwatch = defaultOnStopwatch;
+
         /// <summary>
         /// 创建实现IDisposable接口的计时器
         /// </summary>
@@ -21,6 +22,7 @@ namespace MinoTool
         {
             return new StopwatchClass(action == null ? OnStopwatch : action);
         }
+
         /// <summary>
         /// 设置计时器结束事件
         /// </summary>
@@ -29,6 +31,7 @@ namespace MinoTool
         {
             OnStopwatch = action;
         }
+
         /// <summary>
         /// 默认的计时器结束事件
         /// </summary>
@@ -37,6 +40,7 @@ namespace MinoTool
         {
             Console.WriteLine(stopwatch.ElapsedMilliseconds);
         }
+
         /// <summary>
         /// 实现IDisposable接口的计时器
         /// </summary>
