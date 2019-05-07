@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Runtime.InteropServices;
 
 namespace DotNetTestProject
@@ -41,6 +42,21 @@ namespace DotNetTestProject
             Console.WriteLine(num);
             num = 10;
             Console.WriteLine(++num + 10);
+        }
+
+        /// <summary>
+        /// 测试标识符使用@符号的情况
+        /// </summary>
+        public void Test4()
+        {
+            int @int = 10;
+            Console.WriteLine(nameof(@int));
+            FieldInfo fieldInfo = typeof(MyClass).GetField("int");
+            Console.WriteLine(fieldInfo.GetValue(new MyClass()));
+        }
+        public class MyClass
+        {
+            public int @int = 20;
         }
     }
 }
