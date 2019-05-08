@@ -45,14 +45,14 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 测试标识符使用@符号的情况
+        /// 测试标识符使用@符号时标识符的名称
         /// </summary>
         public void Test4()
         {
             int @int = 10;
             Console.WriteLine(nameof(@int));
             FieldInfo fieldInfo = typeof(MyClass).GetField("int");
-            Console.WriteLine(fieldInfo.GetValue(new MyClass()));
+            Console.WriteLine($"{fieldInfo.Name}'s value is {fieldInfo.GetValue(new MyClass())}.");
         }
         public class MyClass
         {
