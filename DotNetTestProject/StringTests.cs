@@ -34,5 +34,13 @@ namespace DotNetTestProject
             Console.WriteLine(str2);
             Console.WriteLine(str3);
         }
+
+        /// <summary>
+        /// 测试逐字字符串
+        /// </summary>
+        public void Test3()
+        {
+            Console.WriteLine(@"Hello ""World""");
+        }
     }
 }
