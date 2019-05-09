@@ -37,6 +37,8 @@ namespace DotNetTestProject
             //new ReflectionTests().CodeSnippet1();
             //new TypeObjectTests().Test1();
 
+            new CovarianceAndContravarianceTests().Test1();
+
             //new BitConverterTests().Test1();
 
             #region MinoTool Tests
