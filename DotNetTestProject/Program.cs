@@ -29,6 +29,7 @@ namespace DotNetTestProject
             //new StaticMemberTests().Test1();
             //new DelegateTests().Test1();
             //new GenericTests().Test1();
+            //new GenericTests().CodeSnippet1();
             //new IteratorTests().CodeSnippet1();
             //new CovarianceTests().Test1();
             //new ExceptionTests().Test1();
@@ -36,8 +37,6 @@ namespace DotNetTestProject
             //new ReflectionTests().Test1();
             //new ReflectionTests().CodeSnippet1();
             //new TypeObjectTests().Test1();
-
-            new CovarianceAndContravarianceTests().Test1();
 
             //new BitConverterTests().Test1();
 

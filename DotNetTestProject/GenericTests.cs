@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace DotNetTestProject
 {
@@ -28,9 +29,28 @@ namespace DotNetTestProject
         {
             public MyStruct2<int> str;
         }
-        public struct MyStruct2<T> where T : unmanaged
-        {
+        public struct MyStruct2<T> where T : unmanaged { }
 
+        /// <summary>
+        /// 使用泛型实现回调
+        /// </summary>
+        public void CodeSnippet1()
+        {
+            myFunc<MyClass1>(callback);
+        }
+        private void myFunc<T>(Action<T> action) where T : class, IMyInterface
+        {
+            Console.WriteLine(typeof(T));
+            action(JsonConvert.DeserializeObject<T>("{\"MyNum\":20}"));
+        }
+        private void callback(MyClass1 myClass)
+        {
+            Console.WriteLine(myClass.MyNum);
+        }
+        public interface IMyInterface { }
+        public class MyClass1 : IMyInterface
+        {
+            public int MyNum;
         }
     }
 }
