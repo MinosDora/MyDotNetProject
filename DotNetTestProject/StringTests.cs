@@ -42,5 +42,24 @@ namespace DotNetTestProject
         {
             Console.WriteLine(@"Hello ""World""");
         }
+
+        /// <summary>
+        /// 测试字符串插值
+        /// </summary>
+        public void Test4()
+        {
+            int num = 10;
+            Console.WriteLine($"num:{num}");
+            Console.WriteLine($"{{num}}:{num}");
+        }
+
+        /// <summary>
+        /// 测试同时使用逐字字符串和字符串插值
+        /// </summary>
+        public void Test5()
+        {
+            int num = 10;
+            Console.WriteLine($@"""{{num}}"":{num}");
+        }
     }
 }
