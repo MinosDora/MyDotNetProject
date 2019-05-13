@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 
 namespace DotNetTestProject
@@ -41,7 +42,8 @@ namespace DotNetTestProject
         private void myFunc<T>(Action<T> action) where T : class, IMyInterface
         {
             Console.WriteLine(typeof(T));
-            action(JsonConvert.DeserializeObject<T>("{\"MyNum\":20}"));
+            T result = JsonConvert.DeserializeObject<T>("{\"MyNum\":20}");
+            action(result);
         }
         private void callback(MyClass1 myClass)
         {
