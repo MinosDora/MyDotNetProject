@@ -8,11 +8,11 @@ namespace DotNetTestProject
     public class BitConverterTests
     {
         /// <summary>
-        /// 测试大端字节序和小端字节序
+        /// 获取本机是大端字节序还是小端字节序
         /// </summary>
-        public unsafe void Test1()
+        public unsafe void CodeSnippet1()
         {
-            Console.WriteLine(BitConverter.IsLittleEndian);
+            Console.WriteLine($"{nameof(BitConverter.IsLittleEndian)}: {BitConverter.IsLittleEndian}");
             int num = 10;
             byte* firstBytePtr = (byte*)(&num);
             Console.WriteLine(*firstBytePtr);
