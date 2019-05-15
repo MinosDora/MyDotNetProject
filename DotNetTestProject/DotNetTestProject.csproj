@@ -62,6 +62,7 @@
     <Compile Include="ExpressionBodyTests.cs" />
     <Compile Include="GenericTests.cs" />
     <Compile Include="IteratorTests.cs" />
+    <Compile Include="JsonDotNetTests.cs" />
     <Compile Include="MinoToolTests.cs" />
     <Compile Include="ObjectCopyTests.cs" />
     <Compile Include="OOPTests.cs" />
