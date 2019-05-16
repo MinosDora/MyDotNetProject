@@ -42,6 +42,8 @@ namespace DotNetTestProject
             //new TypeObjectTests().Test1();
             //new BitConverterTests().CodeSnippet1();
 
+            new JsonDotNetTests().Test1();
+
             #region MinoTool Tests
             //MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
             //MinoToolTests.DateTimeUtilTests.DateTimeToLongTimeStampTest();
