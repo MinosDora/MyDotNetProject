@@ -13,13 +13,15 @@ namespace DotNetTestProject
     /// </summary>
     public class JsonDotNetTests
     {
-        public void Test1()
+        public void CodeSnippet1()
         {
             MyClass myClass = new MyClass();
             string jsonStr = JsonConvert.SerializeObject(myClass);
+            Console.WriteLine(JsonConvert.SerializeObject(myClass, Formatting.Indented));
             Console.WriteLine(jsonStr);
             JObject jObject = JObject.Parse(jsonStr);
-            Console.WriteLine(jObject.ToString(Formatting.None));
+            Console.WriteLine(jObject.ToString());
+            Console.WriteLine(jObject.ToString(Formatting.Indented));
         }
 
         private class MyClass
