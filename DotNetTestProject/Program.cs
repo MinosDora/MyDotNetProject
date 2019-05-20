@@ -40,6 +40,8 @@ namespace DotNetTestProject
             //new ReflectionTests().Test1();
             //new ReflectionTests().CodeSnippet1();
             //new TypeObjectTests().Test1();
+
+            //new DateTimeTests().Test1();
             //new BitConverterTests().CodeSnippet1();
 
             //new JsonDotNetTests().CodeSnippet1();
