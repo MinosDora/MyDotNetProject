@@ -41,10 +41,14 @@ namespace DotNetTestProject
             //new ReflectionTests().CodeSnippet1();
             //new TypeObjectTests().Test1();
 
+            #region Framework Library Tests
             //new DateTimeTests().Test1();
             //new BitConverterTests().CodeSnippet1();
+            #endregion
 
+            #region Plugins Tests
             //new JsonDotNetTests().CodeSnippet1();
+            #endregion
 
             #region MinoTool Tests
             //MinoToolTests.DateTimeUtilTests.DateTimeToTimeStampTest();
