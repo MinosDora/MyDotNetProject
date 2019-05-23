@@ -6,6 +6,7 @@ namespace DotNetTestProject
     {
         static void Main(string[] args)
         {
+            #region Base Tests
             //new OperatorTests().Test1();
             //new OperatorTests().Test2();
             //new OperatorTests().Test3();
@@ -40,6 +41,7 @@ namespace DotNetTestProject
             //new ReflectionTests().Test1();
             //new ReflectionTests().CodeSnippet1();
             //new TypeObjectTests().Test1();
+            #endregion
 
             #region Framework Library Tests
             //new DateTimeTests().Test1();
