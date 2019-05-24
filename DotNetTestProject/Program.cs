@@ -20,6 +20,7 @@ namespace DotNetTestProject
             //new BoxAndUnBoxTests().Test2();
             //new EnumTests().Test1();
             //new EnumTests().Test2();
+            //new EnumTests().Test3();
             //new StringTests().Test1();
             //new StringTests().Test2();
             //new StringTests().Test3();

@@ -16,11 +16,22 @@ namespace DotNetTestProject
             MyEnum myEnum2 = myEnum | MyEnum.MyEnum2;
             MyFunc(myEnum2);
         }
+        
+        /// <summary>
+        /// 测试枚举组合
+        /// </summary>
+        public void Test2()
+        {
+            MyEnum myEnum = (MyEnum)3;
+            Console.WriteLine(myEnum);
+            myEnum = (MyEnum)7;
+            Console.WriteLine(myEnum);
+        }
 
         /// <summary>
         /// 测试枚举没有枚举数=0的情况时的默认值
         /// </summary>
-        public void Test2()
+        public void Test3()
         {
             Console.WriteLine(default(MyEnum));
         }
@@ -28,6 +39,7 @@ namespace DotNetTestProject
         {
             Console.WriteLine(my);
         }
+        [System.Flags]
         public enum MyEnum
         {
             MyEnum1 = 0x1,
