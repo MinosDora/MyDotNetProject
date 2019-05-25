@@ -40,5 +40,65 @@ namespace DotNetTestProject
             public int MyNum;
             public string MyStr;
         }
+
+        /// <summary>
+        /// 测试自定义转换过程
+        /// </summary>
+        public void CodeSnippet3()
+        {
+            string jsonStr = @"{""MyBool"": ""TRUE""}";
+            MyClass1 myClass1 = JsonConvert.DeserializeObject<MyClass1>(jsonStr);
+            Console.WriteLine(myClass1.MyBool);
+            Console.WriteLine(JsonConvert.SerializeObject(myClass1));
+        }
+        private class MyClass1
+        {
+            [JsonConverter(typeof(MyBoolConverter))]
+            public bool MyBool;
+        }
+    }
+
+    /// <summary>
+    /// 布尔类型数据转换规则
+    /// </summary>
+    public class MyBoolConverter : JsonConverter
+    {
+        private const string TrueStr = "TRUE";
+        private const string FalseStr = "FALSE";
+        public override bool CanConvert(Type objectType) => true;
+
+        //反序列化
+        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.ValueType == typeof(string))
+            {
+                if ((string)reader.Value == TrueStr)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            return false;
+        }
+
+        //序列化
+        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+        {
+            if (value.GetType() == typeof(bool))
+            {
+                bool result = (bool)value;
+                if (result)
+                {
+                    writer.WriteValue(TrueStr);
+                }
+                else
+                {
+                    writer.WriteValue(FalseStr);
+                }
+            }
+        }
     }
 }

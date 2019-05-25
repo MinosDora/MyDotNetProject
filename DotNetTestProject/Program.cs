@@ -50,8 +50,9 @@ namespace DotNetTestProject
             #endregion
 
             #region Plugins Tests
-            new JsonDotNetTests().CodeSnippet1();
+            //new JsonDotNetTests().CodeSnippet1();
             //new JsonDotNetTests().CodeSnippet2();
+            //new JsonDotNetTests().CodeSnippet3();
             #endregion
 
             #region MinoTool Tests
