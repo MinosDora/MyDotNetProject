@@ -22,9 +22,9 @@ namespace DotNetTestProject
         /// </summary>
         public void Test2()
         {
-            MyEnum myEnum = (MyEnum)3;
+            MyEnum myEnum = (MyEnum)7;
             Console.WriteLine(myEnum);
-            myEnum = (MyEnum)7;
+            myEnum = (MyEnum)8;
             Console.WriteLine(myEnum);
         }
 
@@ -44,6 +44,7 @@ namespace DotNetTestProject
         {
             MyEnum1 = 0x1,
             MyEnum2 = 0x2,
+            MyEnum3 = 0x4,
         }
     }
 }
