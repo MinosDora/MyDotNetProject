@@ -44,12 +44,12 @@ namespace DotNetTestProject
             //new TypeObjectTests().Test1();
             #endregion
 
-            #region Framework Library Tests
+            #region .Net Framework Library Tests
             //new DateTimeTests().Test1();
             //new BitConverterTests().CodeSnippet1();
             #endregion
 
-            #region Plugins Tests
+            #region Commonly Library Tests
             //new JsonDotNetTests().CodeSnippet1();
             //new JsonDotNetTests().CodeSnippet2();
             //new JsonDotNetTests().CodeSnippet3();
