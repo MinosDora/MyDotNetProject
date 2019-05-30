@@ -16,7 +16,7 @@ namespace DotNetTestProject
             MyEnum myEnum2 = myEnum | MyEnum.MyEnum2;
             MyFunc(myEnum2);
         }
-        
+
         /// <summary>
         /// 测试枚举组合
         /// </summary>
@@ -24,8 +24,12 @@ namespace DotNetTestProject
         {
             MyEnum myEnum = (MyEnum)7;
             Console.WriteLine(myEnum);
-            myEnum = (MyEnum)8;
+            Console.WriteLine((myEnum & MyEnum.MyEnum2) > 0);
+            Console.WriteLine(myEnum.HasFlag(MyEnum.MyEnum2));
+            myEnum = (MyEnum)9;
             Console.WriteLine(myEnum);
+            Console.WriteLine((myEnum & MyEnum.MyEnum1) > 0);
+            Console.WriteLine(myEnum.HasFlag(MyEnum.MyEnum1));
         }
 
         /// <summary>
