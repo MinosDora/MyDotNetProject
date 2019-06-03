@@ -30,7 +30,7 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 测试枚举组合
+        /// 测试枚举组合及其位运算
         /// </summary>
         public void Test3()
         {
