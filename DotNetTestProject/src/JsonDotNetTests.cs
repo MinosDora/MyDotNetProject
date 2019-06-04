@@ -67,7 +67,7 @@ namespace DotNetTestProject
         private const string FalseStr = "FALSE";
         public override bool CanConvert(Type objectType) => true;
 
-        //反序列化，当前条件本身原生支持，只是举例
+        //反序列化，当前转换原生支持，此处只是以此举例
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             if (reader.ValueType == typeof(string))
