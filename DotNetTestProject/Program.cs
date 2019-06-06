@@ -53,6 +53,8 @@ namespace DotNetTestProject
             //new JsonDotNetTests().CodeSnippet1();
             //new JsonDotNetTests().CodeSnippet2();
             //new JsonDotNetTests().CodeSnippet3();
+
+            new ProtobufTests().Test1();
             #endregion
 
             #region MinoTool Tests

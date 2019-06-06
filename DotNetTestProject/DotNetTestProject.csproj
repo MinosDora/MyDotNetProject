@@ -76,6 +76,7 @@
     <Compile Include="src\OperatorTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\ProtobufTests.cs" />
     <Compile Include="src\ReflectionTests.cs" />
     <Compile Include="src\RefLocalsAndRefReturnsTests.cs" />
     <Compile Include="src\StaticMemberTests.cs" />
