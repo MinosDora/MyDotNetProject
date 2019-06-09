@@ -14,14 +14,15 @@ namespace DotNetTestProject
             using (FileStream fileStream = new FileStream("../proto.txt", FileMode.OpenOrCreate))
             {
                 Serializer.Serialize(fileStream, new MyClass { MyStr = "Hello World.", MyNum = 20 });
+                Console.WriteLine("Serialize Success");
             }
-            Console.WriteLine("Serialize Success");
 
             using (FileStream fileStream = new FileStream("../proto.txt", FileMode.OpenOrCreate))
             {
                 MyClass myClass = Serializer.Deserialize<MyClass>(fileStream);
                 Console.WriteLine(myClass.MyStr);
                 Console.WriteLine(myClass.MyNum);
+                Console.WriteLine("Deserialize Success");
             }
         }
 
