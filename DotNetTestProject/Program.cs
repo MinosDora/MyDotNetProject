@@ -50,11 +50,15 @@ namespace DotNetTestProject
             #endregion
 
             #region Commonly Library Tests
+            #region Json.NET
             //new JsonDotNetTests().CodeSnippet1();
             //new JsonDotNetTests().CodeSnippet2();
             //new JsonDotNetTests().CodeSnippet3();
+            #endregion
 
+            #region protobuf-net
             //new ProtobufTests().CodeSnippet1();
+            #endregion
             #endregion
 
             #region MinoTool Tests
