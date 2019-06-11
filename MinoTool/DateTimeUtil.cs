@@ -4,6 +4,7 @@ namespace MinoTool
 {
     /// <summary>
     /// 时间工具类
+    /// TODO 使用DateTimeOffset代替
     /// </summary>
     public static class DateTimeUtil
     {
