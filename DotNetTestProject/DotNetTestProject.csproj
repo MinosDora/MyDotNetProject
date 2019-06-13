@@ -57,34 +57,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\BitConverterTests.cs" />
-    <Compile Include="src\BoxAndUnBoxTests.cs" />
-    <Compile Include="src\ConstructorTests.cs" />
-    <Compile Include="src\CovarianceAndContravarianceTests.cs" />
-    <Compile Include="src\CovarianceTests.cs" />
-    <Compile Include="src\DateTimeTests.cs" />
-    <Compile Include="src\DelegateTests.cs" />
-    <Compile Include="src\EnumTests.cs" />
-    <Compile Include="src\ExceptionTests.cs" />
-    <Compile Include="src\ExpressionBodyTests.cs" />
-    <Compile Include="src\GenericTests.cs" />
-    <Compile Include="src\IteratorTests.cs" />
+    <Compile Include="src\base\BitConverterTests.cs" />
+    <Compile Include="src\base\BoxAndUnBoxTests.cs" />
+    <Compile Include="src\base\ConstructorTests.cs" />
+    <Compile Include="src\base\CovarianceAndContravarianceTests.cs" />
+    <Compile Include="src\base\CovarianceTests.cs" />
+    <Compile Include="src\base\DateTimeTests.cs" />
+    <Compile Include="src\base\DelegateTests.cs" />
+    <Compile Include="src\base\EnumTests.cs" />
+    <Compile Include="src\base\ExceptionTests.cs" />
+    <Compile Include="src\base\ExpressionBodyTests.cs" />
+    <Compile Include="src\base\GenericTests.cs" />
+    <Compile Include="src\base\IteratorTests.cs" />
     <Compile Include="src\JsonDotNetTests.cs" />
     <Compile Include="src\MinoToolTests.cs" />
-    <Compile Include="src\ObjectCopyTests.cs" />
-    <Compile Include="src\OOPTests.cs" />
-    <Compile Include="src\OperatorTests.cs" />
+    <Compile Include="src\base\ObjectCopyTests.cs" />
+    <Compile Include="src\base\OOPTests.cs" />
+    <Compile Include="src\base\OperatorTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\ProtobufTests.cs" />
-    <Compile Include="src\ReflectionTests.cs" />
-    <Compile Include="src\RefLocalsAndRefReturnsTests.cs" />
-    <Compile Include="src\StaticMemberTests.cs" />
-    <Compile Include="src\StringTests.cs" />
-    <Compile Include="src\TypeConversionTests.cs" />
-    <Compile Include="src\TypeObjectTests.cs" />
-    <Compile Include="src\UnsafeCodeTests.cs" />
-    <Compile Include="src\VariableTests.cs" />
+    <Compile Include="src\base\ReflectionTests.cs" />
+    <Compile Include="src\base\RefLocalsAndRefReturnsTests.cs" />
+    <Compile Include="src\base\StaticMemberTests.cs" />
+    <Compile Include="src\base\StringTests.cs" />
+    <Compile Include="src\base\TypeConversionTests.cs" />
+    <Compile Include="src\base\TypeObjectTests.cs" />
+    <Compile Include="src\base\UnsafeCodeTests.cs" />
+    <Compile Include="src\base\VariableTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
