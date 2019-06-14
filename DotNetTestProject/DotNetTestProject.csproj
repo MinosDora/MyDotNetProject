@@ -69,14 +69,14 @@
     <Compile Include="src\base\ExpressionBodyTests.cs" />
     <Compile Include="src\base\GenericTests.cs" />
     <Compile Include="src\base\IteratorTests.cs" />
-    <Compile Include="src\JsonDotNetTests.cs" />
+    <Compile Include="src\other\JsonDotNetTests.cs" />
     <Compile Include="src\MinoToolTests.cs" />
     <Compile Include="src\base\ObjectCopyTests.cs" />
     <Compile Include="src\base\OOPTests.cs" />
     <Compile Include="src\base\OperatorTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\ProtobufTests.cs" />
+    <Compile Include="src\other\ProtobufTests.cs" />
     <Compile Include="src\base\ReflectionTests.cs" />
     <Compile Include="src\base\RefLocalsAndRefReturnsTests.cs" />
     <Compile Include="src\base\StaticMemberTests.cs" />
