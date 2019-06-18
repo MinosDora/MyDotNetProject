@@ -58,5 +58,17 @@ namespace DotNetTestProject
         {
             public int @int = 20;
         }
+
+        /// <summary>
+        /// 条件运算符和null合并运算符
+        /// </summary>
+        public void CodeSnippet1()
+        {
+            Console.WriteLine(new MyClass1()?.MyStr ?? "haha");
+        }
+        private class MyClass1
+        {
+            public string MyStr;
+        }
     }
 }
