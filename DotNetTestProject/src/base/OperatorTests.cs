@@ -60,15 +60,21 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 条件运算符和null合并运算符
+        /// 条件运算符和null合并运算符联合使用
         /// </summary>
         public void CodeSnippet1()
         {
-            Console.WriteLine(new MyClass1()?.MyStr ?? "haha");
+            MyClass1 myClass1 = new MyClass1 { IsIt = true };
+            Console.WriteLine(myClass1?.MyStr ?? "haha");
+            if (myClass1?.IsIt ?? false)
+            {
+                Console.WriteLine("It is.");
+            }
         }
         private class MyClass1
         {
             public string MyStr;
+            public bool IsIt;
         }
     }
 }
