@@ -14,13 +14,12 @@ namespace DotNetTestProject
         /// </summary>
         public void CodeSnippet1()
         {
-            foreach (var i in Fibonacci().Take(100))
+            foreach (var i in FibonacciIterator().Take(100))
             {
                 Console.WriteLine(i);
             }
         }
-
-        private IEnumerable<long> Fibonacci()
+        private IEnumerable<long> FibonacciIterator()
         {
             long current = 1, next = 1;
 
