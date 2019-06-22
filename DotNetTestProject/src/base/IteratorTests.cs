@@ -10,7 +10,7 @@ namespace DotNetTestProject
     public class IteratorTests
     {
         /// <summary>
-        /// 对斐波那契数列使用迭代器
+        /// 使用迭代器实现斐波那契数列
         /// </summary>
         public void CodeSnippet1()
         {
