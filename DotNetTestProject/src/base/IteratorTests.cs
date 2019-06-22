@@ -14,6 +14,18 @@ namespace DotNetTestProject
         /// </summary>
         public void CodeSnippet1()
         {
+            //正常方式打印斐波那契数列
+            int index = 0;
+            foreach (var item in FibonacciIterator())
+            {
+                if (index >= 100)
+                {
+                    break;
+                }
+                Console.WriteLine(item);
+                index += 1;
+            }
+            //使用Linq打印斐波那契数列
             foreach (var i in FibonacciIterator().Take(100))
             {
                 Console.WriteLine(i);
