@@ -8,7 +8,7 @@ namespace DotNetTestProject
     public class BitConverterTests
     {
         /// <summary>
-        /// 获取本机是大端字节序还是小端字节序
+        /// 使用非安全代码获取本机是大端字节序还是小端字节序
         /// </summary>
         public unsafe void CodeSnippet1()
         {
