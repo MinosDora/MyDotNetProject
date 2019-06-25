@@ -60,6 +60,7 @@
     <Compile Include="src\base\ExpressionBodyTests.cs" />
     <Compile Include="src\base\GenericTests.cs" />
     <Compile Include="src\base\IteratorTests.cs" />
+    <Compile Include="src\base\MethodTests.cs" />
     <Compile Include="src\other\JsonDotNetTests.cs" />
     <Compile Include="src\MinoToolTests.cs" />
     <Compile Include="src\base\ObjectCopyTests.cs" />
