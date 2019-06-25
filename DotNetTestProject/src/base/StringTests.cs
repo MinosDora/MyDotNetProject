@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ObjectLayoutInspector;
+using System;
+using System.Runtime.InteropServices;
 
 namespace DotNetTestProject
 {
@@ -60,6 +62,31 @@ namespace DotNetTestProject
         {
             int num = 10;
             Console.WriteLine($@"""{{num}}"":{num}");
+        }
+
+        /// <summary>
+        /// 使用WinDbg测试string实例占用内存的大小，经过测试，其内存地址并未严格按照该大小排布
+        /// </summary>
+        public void Test6()
+        {
+            //                          //字节大小  内存地址/偏差
+            string str = "a";           //28bytes, 26620
+            string str1 = "ab";         //30bytes, 26660 40
+            string str2 = "abc";        //32bytes, 26720 40
+            string str3 = "abcd";       //34bytes, 26760 40
+            string str4 = "abcde";      //36bytes, 27030 270
+            string str5 = "abcdef";     //38bytes, 27100 70
+            string str6 = "abcdefg";    //40bytes, 27150 50
+            string str7 = "abcdefgh";   //42bytes, 27220 70
+            Console.WriteLine(str);
+            Console.WriteLine(str1);
+            Console.WriteLine(str2);
+            Console.WriteLine(str3);
+            Console.WriteLine(str4);
+            Console.WriteLine(str5);
+            Console.WriteLine(str6);
+            Console.WriteLine(str7);
+            TypeLayout.PrintLayout<string>();
         }
     }
 }

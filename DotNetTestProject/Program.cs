@@ -27,6 +27,7 @@ namespace DotNetTestProject
             //new StringTests().Test3();
             //new StringTests().Test4();
             //new StringTests().Test5();
+            //new StringTests().Test6();
             //new MethodTests().CodeSnippet1();
             //new RefLocalsAndRefReturnsTests().CodeSnippet1();
             //new OOPTests().Test1();
