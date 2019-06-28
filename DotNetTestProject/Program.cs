@@ -43,7 +43,7 @@ namespace DotNetTestProject
             //new GenericTests().CodeSnippet1();
             //new IteratorTests().CodeSnippet1();
             //new CovarianceTests().Test1();
-            //new ExceptionTests().Test1();
+            ////new ExceptionTests().Test1();
             //new UnsafeCodeTests().CodeSnippet1();
             //new ReflectionTests().Test1();
             //new ReflectionTests().CodeSnippet1();
