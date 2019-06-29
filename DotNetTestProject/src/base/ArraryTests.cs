@@ -9,7 +9,7 @@ namespace DotNetTestProject
     public class ArraryTests
     {
         /// <summary>
-        /// 使用WinDbg测试数组实例占用内存的大小
+        /// 使用WinDbg测试元素为值类型的数组实例占用内存的大小
         /// </summary>
         public void Test1()
         {
@@ -24,7 +24,7 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 使用WinDbg测试数组实例占用内存的大小
+        /// 使用WinDbg测试元素为引用类型的数组实例占用内存的大小
         /// </summary>
         public void Test2()
         {
