@@ -18,7 +18,7 @@ namespace DotNetTestProject
             }
             Console.WriteLine(Foo());
             Func<string> func = Foo;
-            Console.WriteLine(func());
+            Console.WriteLine(func?.Invoke());
         }
     }
 }
