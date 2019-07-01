@@ -68,15 +68,15 @@ namespace DotNetTestProject
         /// </summary>
         public void Test6()
         {
-            //                          //字节大小  内存地址&偏差
+            //                          //字节大小  内存地址  偏差
             string str = "a";           //28bytes  26620
-            string str1 = "ab";         //30bytes  26660 40
-            string str2 = "abc";        //32bytes  26720 40
-            string str3 = "abcd";       //34bytes  26760 40
-            string str4 = "abcde";      //36bytes  27030 270
-            string str5 = "abcdef";     //38bytes  27100 70
-            string str6 = "abcdefg";    //40bytes  27150 50
-            string str7 = "abcdefgh";   //42bytes  27220 70
+            string str1 = "ab";         //30bytes  26660    40
+            string str2 = "abc";        //32bytes  26720    40
+            string str3 = "abcd";       //34bytes  26760    40
+            string str4 = "abcde";      //36bytes  27030    270
+            string str5 = "abcdef";     //38bytes  27100    70
+            string str6 = "abcdefg";    //40bytes  27150    50
+            string str7 = "abcdefgh";   //42bytes  27220    70
             Console.WriteLine(str);
             Console.WriteLine(str1);
             Console.WriteLine(str2);
