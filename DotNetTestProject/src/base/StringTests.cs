@@ -19,8 +19,8 @@ namespace DotNetTestProject
             str1 += str2.Substring(0, 1);
             string str3 = "Hell" + "o";
 
-            Console.WriteLine(object.ReferenceEquals(str, str1));   //False
-            Console.WriteLine(object.ReferenceEquals(str, str3));   //True
+            Console.WriteLine(ReferenceEquals(str, str1));   //False
+            Console.WriteLine(ReferenceEquals(str, str3));   //True
         }
 
         /// <summary>
