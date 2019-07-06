@@ -11,7 +11,7 @@ namespace DotNetTestProject
         /// <summary>
         /// 结构定义的最佳实践
         /// </summary>
-        private struct MyStruct : IEquatable<MyStruct>  //实现IEquatable<T>接口用于泛型
+        private struct MyStruct : IEquatable<MyStruct>  //实现IEquatable<T>接口用于泛型/泛型集合
         {
             public int MyNum;
 
