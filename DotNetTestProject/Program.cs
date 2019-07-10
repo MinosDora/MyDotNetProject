@@ -38,6 +38,7 @@ namespace DotNetTestProject
             //new ObjectCopyTests().Test1();
             //new ConstructorTests().Test1();
             //new ConstructorTests().Test2();
+            new PropertyTests().Test1();
             //new StaticMemberTests().Test1();
             //new DelegateTests().Test1();
             //new GenericTests().Test1();
