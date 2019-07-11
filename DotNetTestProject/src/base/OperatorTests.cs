@@ -42,6 +42,10 @@ namespace DotNetTestProject
             Console.WriteLine(num);
             num = 10;
             Console.WriteLine(++num + 10);
+
+            int num1 = 5, num2 = 6;
+            num = num1++ * --num2;
+            Console.WriteLine(num);
         }
 
         /// <summary>
