@@ -31,7 +31,7 @@ namespace DotNetTestProject
             }
             public void MyFunc2()
             {
-                Console.WriteLine($"{nameof(MyBaseClass)}'s {nameof(MyFunc1)} is called, num is {num}.");
+                Console.WriteLine($"{nameof(MyBaseClass)}'s {nameof(MyFunc2)} is called, num is {num}.");
             }
         }
         class MyClass : MyBaseClass
@@ -43,7 +43,7 @@ namespace DotNetTestProject
             }
             public new void MyFunc2()
             {
-                Console.WriteLine($"{nameof(MyClass)}'s {nameof(MyFunc1)} is called, num is {num}.");
+                Console.WriteLine($"{nameof(MyClass)}'s {nameof(MyFunc2)} is called, num is {num}.");
             }
         }
     }
