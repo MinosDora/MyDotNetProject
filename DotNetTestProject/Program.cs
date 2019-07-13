@@ -7,6 +7,7 @@ namespace DotNetTestProject
         static void Main(string[] args)
         {
             #region Base Tests
+            //new PrimitiveTypeTests().Test1();
             //new OperatorTests().Test1();
             //new OperatorTests().Test2();
             //new OperatorTests().Test3();
@@ -23,6 +24,7 @@ namespace DotNetTestProject
             //new EnumTests().Test2();
             //new EnumTests().Test3();
             //new ExpressionBodyTests().CodeSnippet1();
+            //new MethodTests().Test1();
             //new MethodTests().CodeSnippet1();
             //new StringTests().Test1();
             //new StringTests().Test2();
@@ -38,7 +40,7 @@ namespace DotNetTestProject
             //new ObjectCopyTests().Test1();
             //new ConstructorTests().Test1();
             //new ConstructorTests().Test2();
-            new PropertyTests().Test1();
+            //new PropertyTests().Test1();
             //new StaticMemberTests().Test1();
             //new DelegateTests().Test1();
             //new GenericTests().Test1();
