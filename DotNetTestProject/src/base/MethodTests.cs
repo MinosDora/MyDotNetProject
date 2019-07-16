@@ -45,11 +45,11 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 局部函数Local Function
+        /// 局部函数Local Function，类似闭包的实现形式，使用嵌套类实现
         /// </summary>
         public void CodeSnippet1()
         {
-            string Foo()
+            string Foo()  //会在当前类型的定义中添加一个嵌套类<>c，将此方法声明在该嵌套类中
             {
                 return "Hello";
             }
