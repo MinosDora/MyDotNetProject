@@ -15,7 +15,7 @@ namespace DotNetTestProject
         public void Test1()
         {
             int times = 10000000;
-            MyClass myObj = new MyClass();
+            MyClass1 myObj = new MyClass1();
             using (StopwatchUtil.CreateStopwatch())
             {
                 for (int i = 0; i < times; i++)
@@ -25,7 +25,7 @@ namespace DotNetTestProject
             }
             using (StopwatchUtil.CreateStopwatch())
             {
-                Type myType = typeof(MyClass);
+                Type myType = typeof(MyClass1);
                 MethodInfo methodInfo = myType.GetMethod("MyFunc");
                 for (int i = 0; i < times; i++)
                 {
@@ -35,7 +35,7 @@ namespace DotNetTestProject
 
             using (StopwatchUtil.CreateStopwatch())
             {
-                Type myType = typeof(MyClass);
+                Type myType = typeof(MyClass1);
                 MethodInfo methodInfo = myType.GetMethod("MyFunc");
                 Action action = (Action)methodInfo.CreateDelegate(typeof(Action), myObj);
                 for (int i = 0; i < times; i++)
@@ -44,22 +44,28 @@ namespace DotNetTestProject
                 }
             }
         }
+        private class MyClass1
+        {
+            //[MethodImpl(MethodImplOptions.NoInlining)]
+            public void MyFunc()
+            {
+
+            }
+        }
 
         /// <summary>
         /// 测试委托增删后会创建新的委托实例
         /// </summary>
         public void Test2()
         {
-            MyClass myClass = new MyClass();
+            MyClass2 myClass = new MyClass2();
             Action action = myClass.MyFunc;
             Console.WriteLine(action.GetHashCode());
             action += myClass.MyFunc;
             Console.WriteLine(action.GetHashCode());
         }
-
-        public class MyClass
+        private class MyClass2
         {
-            //[MethodImpl(MethodImplOptions.NoInlining)]
             public void MyFunc()
             {
 
