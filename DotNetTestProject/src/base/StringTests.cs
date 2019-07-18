@@ -87,5 +87,41 @@ namespace DotNetTestProject
             Console.WriteLine(str7);
             TypeLayout.PrintLayout<string>();
         }
+
+        /// <summary>
+        /// 根据空格翻转字符串
+        /// </summary>
+        public void Test7()
+        {
+            string myStr = "I am a Boy";
+            string[] strings = myStr.Split(' ');
+            Array.Reverse(strings);
+            Console.WriteLine(string.Join(" ", strings));
+
+            char[] chars = myStr.ToCharArray();
+            int startIndex = 0;
+            char[] result = new char[chars.Length];
+            for (int i = 0; i < chars.Length; i++)
+            {
+                if (chars[i] == ' ')
+                {
+                    int endIndex = i;
+                    for (int j = startIndex; j < endIndex; j++)
+                    {
+                        result[chars.Length - endIndex + j - startIndex] = chars[j];
+                    }
+                    result[chars.Length - endIndex - 1] = ' ';
+                    startIndex = endIndex + 1;
+                }
+                if (i == chars.Length - 1)
+                {
+                    for (int j = startIndex; j < chars.Length; j++)
+                    {
+                        result[j - startIndex] = chars[j];
+                    }
+                }
+            }
+            Console.WriteLine(new string(result));
+        }
     }
 }

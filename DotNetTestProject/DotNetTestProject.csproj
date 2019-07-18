@@ -54,7 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\base\ArraryTests.cs" />
+    <Compile Include="src\base\ArrayTests.cs" />
     <Compile Include="src\base\BitConverterTests.cs" />
     <Compile Include="src\base\BoxAndUnBoxTests.cs" />
     <Compile Include="src\base\ConstructorTests.cs" />

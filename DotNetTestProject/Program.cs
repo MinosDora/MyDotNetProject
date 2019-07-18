@@ -32,9 +32,10 @@ namespace DotNetTestProject
             //new StringTests().Test4();
             //new StringTests().Test5();
             //new StringTests().Test6();
-            //new ArraryTests().Test1();
-            //new ArraryTests().Test2();
-            //new ArraryTests().Test3();
+            //new StringTests().Test7();
+            //new ArrayTests().Test1();
+            //new ArrayTests().Test2();
+            //new ArrayTests().Test3();
             //new RefLocalsAndRefReturnsTests().CodeSnippet1();
             //new OOPTests().Test1();
             //new ObjectCopyTests().Test1();

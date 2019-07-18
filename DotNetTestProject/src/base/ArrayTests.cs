@@ -6,7 +6,7 @@ namespace DotNetTestProject
     /// <summary>
     /// 数组
     /// </summary>
-    public class ArraryTests
+    public class ArrayTests
     {
         /// <summary>
         /// 使用WinDbg测试元素为值类型的数组实例占用内存的大小
