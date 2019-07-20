@@ -46,6 +46,7 @@ namespace DotNetTestProject
             //new DelegateTests().Test1();
             //new GenericTests().Test1();
             //new GenericTests().CodeSnippet1();
+            //new CollectionTests().Test1();
             //new IteratorTests().CodeSnippet1();
             //new CovarianceTests().Test1();
             //new CovarianceTests().Test2();
@@ -86,5 +87,6 @@ namespace DotNetTestProject
 
             Console.Read();
         }
+        
     }
 }
