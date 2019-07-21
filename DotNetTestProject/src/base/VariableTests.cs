@@ -15,10 +15,10 @@ namespace DotNetTestProject
             int a = 10;
             int b;
             int c = 20;
-            Console.WriteLine((int)&a);
-            Console.WriteLine((int)&b);
-            Console.WriteLine((int)&c);
-            Console.WriteLine(*(&b));
+            Console.WriteLine((int)&a);     //-1233195472
+            Console.WriteLine((int)&b);     //-1233195480
+            Console.WriteLine((int)&c);     //-1233195488
+            Console.WriteLine(*(&b));       //0
         }
     }
 }
