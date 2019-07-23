@@ -65,6 +65,7 @@
     <Compile Include="src\base\EnumTests.cs" />
     <Compile Include="src\base\ExceptionTests.cs" />
     <Compile Include="src\base\ExpressionBodyTests.cs" />
+    <Compile Include="src\base\GCTests.cs" />
     <Compile Include="src\base\GenericTests.cs" />
     <Compile Include="src\base\IteratorTests.cs" />
     <Compile Include="src\base\MethodTests.cs" />
