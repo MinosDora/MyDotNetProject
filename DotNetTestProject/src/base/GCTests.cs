@@ -10,7 +10,7 @@ namespace DotNetTestProject
         /// <summary>
         /// 测试垃圾回收时执行析构函数的时机
         /// </summary>
-        public unsafe void Test1()
+        public void Test1()
         {
             MyClass myClass = new MyClass();
             myClass = null;
