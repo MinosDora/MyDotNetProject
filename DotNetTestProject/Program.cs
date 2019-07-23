@@ -51,6 +51,7 @@ namespace DotNetTestProject
             //new CovarianceTests().Test1();
             //new CovarianceTests().Test2();
             ////new ExceptionTests().Test1();
+            //new UnsafeCodeTests().Test1();
             //new UnsafeCodeTests().CodeSnippet1();
             //new ReflectionTests().Test1();
             //new ReflectionTests().CodeSnippet1();
