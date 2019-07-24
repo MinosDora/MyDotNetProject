@@ -21,7 +21,6 @@ namespace DotNetTestProject
         }
         private class MyClass
         {
-            public int MyNum;
             ~MyClass()
             {
                 Console.WriteLine("MyClass's Finalizer called.");
