@@ -8,7 +8,7 @@ namespace DotNetTestProject
     public class GCTests
     {
         /// <summary>
-        /// 测试垃圾回收时执行析构函数的时机
+        /// 测试垃圾回收时执行析构函数的时机，需要在Release模式下运行
         /// </summary>
         public void Test1()
         {
