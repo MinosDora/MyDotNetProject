@@ -44,6 +44,21 @@ namespace DotNetTestProject
             }
         }
 
+        private int retVal = 10;
+        /// <summary>
+        /// 测试方法返回值可以使用(variable = value);的格式，先将variable赋值，然后将其返回
+        /// </summary>
+        public void Test2()
+        {
+            Console.WriteLine(MyFunc());
+
+            int MyFunc()
+            {
+                return (retVal = 20);
+            }
+            Console.WriteLine(retVal);
+        }
+
         /// <summary>
         /// 局部函数Local Function，类似闭包的实现形式，使用嵌套类实现
         /// </summary>

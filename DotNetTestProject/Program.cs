@@ -26,6 +26,7 @@ namespace DotNetTestProject
             //new EnumTests().Test3();
             //new ExpressionBodyTests().CodeSnippet1();
             //new MethodTests().Test1();
+            //new MethodTests().Test2();
             //new MethodTests().CodeSnippet1();
             //new StringTests().Test1();
             //new StringTests().Test2();
