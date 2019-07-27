@@ -12,6 +12,7 @@ namespace DotNetTestProject
             //new OperatorTests().Test2();
             //new OperatorTests().Test3();
             //new OperatorTests().Test4();
+            //new OperatorTests().Test5();
             //new OperatorTests().CodeSnippet1();
             //new VariableTests().Test1();
             //new TypeConversionTests().Test1();
