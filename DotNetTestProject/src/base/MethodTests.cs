@@ -52,10 +52,7 @@ namespace DotNetTestProject
         {
             Console.WriteLine(MyFunc());
 
-            int MyFunc()
-            {
-                return (retVal = 20);
-            }
+            int MyFunc() => (retVal = 20);
             Console.WriteLine(retVal);
         }
 
