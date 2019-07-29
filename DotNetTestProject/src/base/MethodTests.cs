@@ -52,7 +52,11 @@ namespace DotNetTestProject
         {
             Console.WriteLine(MyFunc());
 
-            int MyFunc() => (retVal = 20);
+            int MyFunc()
+            {
+                return (retVal = 20);
+            }
+            //int MyFunc() => (retVal = 20);  //除普通方法外，对属性、索引器及对应的方法体表达式都适用
             Console.WriteLine(retVal);
         }
 
