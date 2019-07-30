@@ -46,17 +46,18 @@ namespace DotNetTestProject
 
         private int retVal = 10;
         /// <summary>
-        /// 测试方法返回值可以使用(variable = value);的格式，先将variable赋值，然后将其返回
+        /// 测试方法返回值可以使用variable = value;的格式，先将variable赋值，然后将其返回
         /// </summary>
         public void Test2()
         {
             Console.WriteLine(MyFunc());
 
+            //int MyFunc() => retVal = 20;  //除普通方法外，对属性、索引器及对应的方法体表达式都适用
             int MyFunc()
             {
-                return (retVal = 20);
+                //do...
+                return retVal = 20;
             }
-            //int MyFunc() => (retVal = 20);  //除普通方法外，对属性、索引器及对应的方法体表达式都适用
             Console.WriteLine(retVal);
         }
 
