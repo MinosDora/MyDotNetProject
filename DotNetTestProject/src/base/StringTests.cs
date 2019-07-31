@@ -123,5 +123,20 @@ namespace DotNetTestProject
             }
             Console.WriteLine(new string(result));
         }
+
+        /// <summary>
+        /// 测试通过不安全代码修改字符串，其哈希值会变化
+        /// </summary>
+        public unsafe void Test8()
+        {
+            string str = "Hello";
+            Console.WriteLine(str.GetHashCode());
+            fixed (char* p = str)
+            {
+                p[0] = 'C';
+            }
+            Console.WriteLine(str);
+            Console.WriteLine(str.GetHashCode());
+        }
     }
 }

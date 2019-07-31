@@ -35,6 +35,7 @@ namespace DotNetTestProject
             //new StringTests().Test5();
             //new StringTests().Test6();
             //new StringTests().Test7();
+            //new StringTests().Test8();
             //new ArrayTests().Test1();
             //new ArrayTests().Test2();
             //new ArrayTests().Test3();
