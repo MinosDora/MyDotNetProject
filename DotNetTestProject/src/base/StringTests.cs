@@ -21,6 +21,9 @@ namespace DotNetTestProject
 
             Console.WriteLine(ReferenceEquals(str, str1));   //False
             Console.WriteLine(ReferenceEquals(str, str3));   //True
+            Console.WriteLine(str.GetHashCode());   //-327378614
+            Console.WriteLine(str1.GetHashCode());  //-327378614
+            Console.WriteLine(str3.GetHashCode());  //-327378614
         }
 
         /// <summary>
