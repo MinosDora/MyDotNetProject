@@ -54,7 +54,7 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 测试委托增删后会创建新的委托实例
+        /// 测试委托增删后会创建新的委托实例，委托是引用类型，频繁创建新的委托实例会造成堆内存的频繁分配
         /// </summary>
         public void Test2()
         {
