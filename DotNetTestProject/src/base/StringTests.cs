@@ -68,6 +68,7 @@ namespace DotNetTestProject
 
         /// <summary>
         /// 使用WinDbg测试string实例占用内存的大小，经过测试，其内存地址并未严格按照该大小排布
+        /// 但string实例大小占用规则为26+字符数*2
         /// </summary>
         public void Test6()
         {
