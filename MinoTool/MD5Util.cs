@@ -33,7 +33,7 @@ namespace MinoTool
             }
             catch (Exception e)
             {
-                throw new Exception("GetMD5HashFromFile() fail, error:" + e.Message);
+                throw new Exception($"GetMD5HashFromFile() fail, error: {e.Message}");
             }
         }
     }
