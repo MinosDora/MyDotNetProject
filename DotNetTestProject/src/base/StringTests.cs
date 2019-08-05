@@ -1,5 +1,6 @@
 ﻿using ObjectLayoutInspector;
 using System;
+using System.Collections.Generic;
 
 namespace DotNetTestProject
 {
@@ -141,6 +142,44 @@ namespace DotNetTestProject
             }
             Console.WriteLine(str);
             Console.WriteLine(str.GetHashCode());
+        }
+
+        /// <summary>
+        /// 将字符串中的字母转换大小写，打印所有可能的情况
+        /// </summary>
+        public void Test9()
+        {
+            MyTest("2a5b");
+            unsafe void MyTest(string str)
+            {
+                str = str.ToLower();
+                char[] chars = str.ToCharArray();
+                List<int> ints = new List<int>(5);
+                for (int i = 0; i < chars.Length; i++)
+                {
+                    if (chars[i] >= 97 && chars[i] <= 122)
+                    {
+                        ints.Add(i);
+                    }
+                }
+
+                int intsCount = ints.Count;
+                for (int i = 0; i < Math.Pow(2, intsCount); i++)
+                {
+                    string newStr = string.Copy(str);
+                    fixed (char* p = newStr)
+                    {
+                        for (int j = 0; j < intsCount; j++)
+                        {
+                            if ((i & (j + 1)) > 0)
+                            {
+                                p[ints[j]] = (char)(p[ints[j]] - 32);
+                            }
+                        }
+                        Console.WriteLine(newStr);
+                    }
+                }
+            }
         }
     }
 }
