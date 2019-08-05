@@ -150,38 +150,47 @@ namespace DotNetTestProject
         public void Test9()
         {
             ArrangeString("2a5b3c");
-            unsafe void ArrangeString(string str)
+            void ArrangeString(string str)
             {
                 str = str.ToLower();
                 char[] chars = str.ToCharArray();
-                List<int> ints = new List<int>(5);
+                List<int> indexs = new List<int>(chars.Length);
                 //获取所有小写字母的集合
                 for (int i = 0; i < chars.Length; i++)
                 {
-                    if (chars[i] >= 97 && chars[i] <= 122)
+                    if (isLower(chars[i]) || isUpper(chars[i]))
                     {
-                        ints.Add(i);
+                        indexs.Add(i);
                     }
                 }
 
-                int intsCount = ints.Count;
-                //一共2^intsCount种可能
-                for (int i = 0; i < Math.Pow(2, intsCount); i++)
+                int indexCount = indexs.Count;
+                //一共2^indexCount
+                for (int i = 0; i < Math.Pow(2, indexCount); i++)
                 {
-                    //使用非安全代码修改字符串前先做copy操作
-                    string newStr = string.Copy(str);
-                    fixed (char* p = newStr)
+                    for (int j = 0; j < indexCount; j++)
                     {
-                        for (int j = 0; j < intsCount; j++)
+                        int result = i & (int)Math.Pow(2, indexCount - j - 1);
+                        char @char = chars[indexs[j]];
+                        if (result > 0 && isLower(@char))
                         {
-                            if ((i & (int)Math.Pow(2, j)) > 0)
-                            {
-                                p[ints[j]] = (char)(p[ints[j]] - 32);
-                            }
+                            chars[indexs[j]] = (char)(chars[indexs[j]] - 32);
                         }
-                        Console.WriteLine(newStr);
+                        else if (result == 0 && isUpper(@char))
+                        {
+                            chars[indexs[j]] = (char)(chars[indexs[j]] + 32);
+                        }
                     }
+                    Console.WriteLine(new string(chars));
                 }
+            }
+            bool isLower(char @char)
+            {
+                return @char >= 'a' && @char <= 'z';
+            }
+            bool isUpper(char @char)
+            {
+                return @char >= 'A' && @char <= 'Z';
             }
         }
     }
