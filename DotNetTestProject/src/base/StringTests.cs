@@ -170,15 +170,16 @@ namespace DotNetTestProject
                 {
                     for (int j = 0; j < indexCount; j++)
                     {
-                        int result = i & (int)Math.Pow(2, indexCount - j - 1);
-                        char @char = chars[indexs[j]];
-                        if (result > 0 && isLower(@char))
+                        int @int = i & (1 << j);
+                        int index = indexs[indexCount - j - 1];
+                        char @char = chars[index];
+                        if (@int > 0 && isLower(@char))
                         {
-                            chars[indexs[j]] = (char)(chars[indexs[j]] - 32);
+                            chars[index] = (char)(@char - 32);
                         }
-                        else if (result == 0 && isUpper(@char))
+                        else if (@int == 0 && isUpper(@char))
                         {
-                            chars[indexs[j]] = (char)(chars[indexs[j]] + 32);
+                            chars[index] = (char)(@char + 32);
                         }
                     }
                     Console.WriteLine(new string(chars));
