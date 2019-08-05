@@ -149,12 +149,13 @@ namespace DotNetTestProject
         /// </summary>
         public void Test9()
         {
-            MyTest("2a5b3c");
-            unsafe void MyTest(string str)
+            ArrangeString("2a5b3c");
+            unsafe void ArrangeString(string str)
             {
                 str = str.ToLower();
                 char[] chars = str.ToCharArray();
                 List<int> ints = new List<int>(5);
+                //获取所有小写字母的集合
                 for (int i = 0; i < chars.Length; i++)
                 {
                     if (chars[i] >= 97 && chars[i] <= 122)
@@ -164,8 +165,10 @@ namespace DotNetTestProject
                 }
 
                 int intsCount = ints.Count;
+                //一共2^intsCount种可能
                 for (int i = 0; i < Math.Pow(2, intsCount); i++)
                 {
+                    //使用非安全代码修改字符串前先做copy操作
                     string newStr = string.Copy(str);
                     fixed (char* p = newStr)
                     {
