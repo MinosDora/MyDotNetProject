@@ -149,7 +149,7 @@ namespace DotNetTestProject
         /// </summary>
         public void Test9()
         {
-            MyTest("2a5b");
+            MyTest("2a5b3c");
             unsafe void MyTest(string str)
             {
                 str = str.ToLower();
@@ -171,7 +171,7 @@ namespace DotNetTestProject
                     {
                         for (int j = 0; j < intsCount; j++)
                         {
-                            if ((i & (j + 1)) > 0)
+                            if ((i & (int)Math.Pow(2, j)) > 0)
                             {
                                 p[ints[j]] = (char)(p[ints[j]] - 32);
                             }
