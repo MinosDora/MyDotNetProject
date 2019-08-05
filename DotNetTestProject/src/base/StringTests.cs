@@ -152,32 +152,31 @@ namespace DotNetTestProject
             ArrangeString("2a5b3c");
             void ArrangeString(string str)
             {
-                str = str.ToLower();
                 char[] chars = str.ToCharArray();
-                List<int> indexs = new List<int>(chars.Length);
                 //获取所有小写字母的集合
+                List<int> indexs = new List<int>(chars.Length);
                 for (int i = 0; i < chars.Length; i++)
                 {
-                    if (isLower(chars[i]) || isUpper(chars[i]))
+                    if (isLowerCharacter(chars[i]) || isUpperCharacter(chars[i]))
                     {
                         indexs.Add(i);
                     }
                 }
 
                 int indexCount = indexs.Count;
-                //一共2^indexCount
-                for (int i = 0; i < Math.Pow(2, indexCount); i++)
+                //一共1<<indexCount种可能
+                for (int i = 0; i < 1 << indexCount; i++)
                 {
                     for (int j = 0; j < indexCount; j++)
                     {
                         bool toUpper = (i & (1 << j)) > 0;
                         int index = indexs[indexCount - j - 1];
                         char @char = chars[index];
-                        if (toUpper && isLower(@char))
+                        if (toUpper && isLowerCharacter(@char))
                         {
                             chars[index] = (char)(@char - 32);
                         }
-                        else if (!toUpper && isUpper(@char))
+                        else if (!toUpper && isUpperCharacter(@char))
                         {
                             chars[index] = (char)(@char + 32);
                         }
@@ -185,11 +184,11 @@ namespace DotNetTestProject
                     Console.WriteLine(new string(chars));
                 }
             }
-            bool isLower(char @char)
+            bool isLowerCharacter(char @char)
             {
                 return @char >= 'a' && @char <= 'z';
             }
-            bool isUpper(char @char)
+            bool isUpperCharacter(char @char)
             {
                 return @char >= 'A' && @char <= 'Z';
             }
