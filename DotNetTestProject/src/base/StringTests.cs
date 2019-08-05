@@ -170,14 +170,14 @@ namespace DotNetTestProject
                 {
                     for (int j = 0; j < indexCount; j++)
                     {
-                        int @int = i & (1 << j);
+                        bool toUpper = (i & (1 << j)) > 0;
                         int index = indexs[indexCount - j - 1];
                         char @char = chars[index];
-                        if (@int > 0 && isLower(@char))
+                        if (toUpper && isLower(@char))
                         {
                             chars[index] = (char)(@char - 32);
                         }
-                        else if (@int == 0 && isUpper(@char))
+                        else if (!toUpper && isUpper(@char))
                         {
                             chars[index] = (char)(@char + 32);
                         }
