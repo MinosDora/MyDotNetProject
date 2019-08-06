@@ -150,6 +150,7 @@ namespace DotNetTestProject
         public void Test9()
         {
             ArrangeString("2a5b3c");
+            //解题思路为二进制数值从0递增到2^n正好符合排列的规律，以n=3举例，000 001 010 011 100 101 110 111
             void ArrangeString(string str)
             {
                 char[] chars = str.ToCharArray();
@@ -165,7 +166,7 @@ namespace DotNetTestProject
 
                 int indexCount = indexs.Count;
                 //一共1<<indexCount种可能
-                for (int i = 0; i < 1 << indexCount; i++)
+                for (int i = 0; i < (1 << indexCount); i++)
                 {
                     for (int j = 0; j < indexCount; j++)
                     {
