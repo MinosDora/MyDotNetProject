@@ -1,4 +1,5 @@
-﻿using ObjectLayoutInspector;
+﻿using MinoTool;
+using ObjectLayoutInspector;
 using System;
 
 namespace DotNetTestProject
@@ -49,6 +50,35 @@ namespace DotNetTestProject
                 ints[i] = i;
             }
             Console.WriteLine(string.Join(",", ints));
+        }
+
+        /// <summary>
+        /// 测试二维数组访问速度，逐行访问教逐列访问速度更快
+        /// </summary>
+        public void Test4()
+        {
+            const int length = 5000;
+            int[,] ints = new int[length, length];
+            using (StopwatchUtil.CreateStopwatch())
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    for (int j = 0; j < length; j++)
+                    {
+                        ints[i, j] = 10;  //快
+                    }
+                }
+            }
+            using (StopwatchUtil.CreateStopwatch())
+            {
+                for (int i = 0; i < length; i++)
+                {
+                    for (int j = 0; j < length; j++)
+                    {
+                        ints[j, i] = 10;  //慢
+                    }
+                }
+            }
         }
     }
 }
