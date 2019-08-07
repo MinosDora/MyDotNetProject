@@ -59,6 +59,15 @@ namespace DotNetTestProject
         {
             const int length = 5000;
             int[,] ints = new int[length, length];
+            //先对数组中每个元素赋值，以使其初始化
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = 0; j < length; j++)
+                {
+                    ints[i, j] = 10;
+                }
+            }
+            //逐行访问
             using (StopwatchUtil.CreateStopwatch())
             {
                 for (int i = 0; i < length; i++)
@@ -69,6 +78,7 @@ namespace DotNetTestProject
                     }
                 }
             }
+            //逐列访问
             using (StopwatchUtil.CreateStopwatch())
             {
                 for (int i = 0; i < length; i++)
