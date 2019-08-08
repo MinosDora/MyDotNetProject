@@ -53,13 +53,13 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 测试二维数组访问速度，逐行访问教逐列访问速度更快
+        /// 测试二维数组访问速度，逐行访问较逐列访问速度更快（由于缓存的影响）
         /// </summary>
         public void Test4()
         {
             const int length = 5000;
             int[,] ints = new int[length, length];
-            //先对数组中每个元素赋值，以使其初始化
+            //先对数组中每个元素初始化，避免初始化带来的影响
             for (int i = 0; i < length; i++)
             {
                 for (int j = 0; j < length; j++)
