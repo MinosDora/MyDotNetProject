@@ -12,7 +12,7 @@ namespace DotNetTestProject
         /// </summary>
         public void Test1()
         {
-            new MyClass().ShallowCopy();
+            new MyClass().ShallowCopy();  //DotNetTestProject.ObjectCopyTests+MyClass
         }
         class MyBaseClass
         {
