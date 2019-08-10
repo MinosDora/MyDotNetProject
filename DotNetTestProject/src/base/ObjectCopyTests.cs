@@ -8,17 +8,17 @@ namespace DotNetTestProject
     public class ObjectCopyTests
     {
         /// <summary>
-        /// 测试浅拷贝对象的类型
+        /// 测试对象浅拷贝，拷贝出的对象类型是被拷贝对象的运行时类型
         /// </summary>
         public void Test1()
         {
-            new MyClass().ShallowCopy();  //DotNetTestProject.ObjectCopyTests+MyClass
+            Console.WriteLine(new MyClass().ShallowCopy().GetType());  //DotNetTestProject.ObjectCopyTests+MyClass
         }
         class MyBaseClass
         {
-            public void ShallowCopy()
+            public MyBaseClass ShallowCopy()
             {
-                Console.WriteLine(this.MemberwiseClone().GetType());
+                return (MyBaseClass)this.MemberwiseClone();
             }
         }
         class MyClass : MyBaseClass { }
