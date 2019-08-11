@@ -40,9 +40,9 @@ namespace DotNetTestProject
         }
         private void myFunc<T>(Action<T> action) where T : class, IMyInterface
         {
-            Console.WriteLine(typeof(T));
-            T result = JsonConvert.DeserializeObject<T>("{\"MyNum\":20}");
-            action(result);
+            Console.WriteLine(typeof(T));  //DotNetTestProject.GenericTests+MyClass1
+            T result = JsonConvert.DeserializeObject<T>("{\"MyNum\":20}");  
+            action?.Invoke(result);  //20
         }
         private void callback(MyClass1 myClass)
         {
