@@ -18,7 +18,7 @@ namespace DotNetTestProject
         {
             public MyBaseClass ShallowCopy()
             {
-                return (MyBaseClass)this.MemberwiseClone();
+                return this.MemberwiseClone() as MyBaseClass;
             }
         }
         class MyClass : MyBaseClass { }
