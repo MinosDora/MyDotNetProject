@@ -185,6 +185,7 @@ namespace DotNetTestProject
                     Console.WriteLine(new string(chars));
                 }
             }
+            //char类型的定义中包含IsLower和IsUpper的方法声明，可以直接使用
             bool isLowerCharacter(char @char)
             {
                 return @char >= 'a' && @char <= 'z';
