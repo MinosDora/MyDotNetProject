@@ -177,7 +177,7 @@ namespace DotNetTestProject
                             || (!toUpper && isUpperCharacter(@char)))
                         {
                             //使用异或运算进行快速大小写字母切换
-                            chars[index] = (char)(@char ^ (1 << 5));
+                            chars[index] = (char)(@char ^ 0x20);
                         }
                     }
                     Console.WriteLine(new string(chars));
