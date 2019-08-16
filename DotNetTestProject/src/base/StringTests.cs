@@ -106,7 +106,7 @@ namespace DotNetTestProject
             char[] chars = myStr.ToCharArray();
             int startIndex = 0;
             char[] result = new char[chars.Length];
-            for (int i = 0; i < chars.Length; i++)
+            for (int i = 0, length = chars.Length; i < length; i++)
             {
                 if (chars[i] == ' ')
                 {
