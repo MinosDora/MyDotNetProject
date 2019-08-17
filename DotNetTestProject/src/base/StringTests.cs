@@ -18,7 +18,7 @@ namespace DotNetTestProject
             string str1 = "Hell";
             string str2 = "oo";
             str1 += str2.Substring(0, 1);
-            string str3 = "Hell" + "o";
+            string str3 = "Hell" + "o";  //由编译器直接合并为"Hello"
 
             Console.WriteLine(ReferenceEquals(str, str1));   //False
             Console.WriteLine(ReferenceEquals(str, str3));   //True
