@@ -10,7 +10,6 @@ namespace DotNetTestProject
         /// <summary>
         /// 测试多态性
         /// </summary>
-        /// <param name="args"></param>
         public void Test1()
         {
             MyClass myClass = new MyClass();
