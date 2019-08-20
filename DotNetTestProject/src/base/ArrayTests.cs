@@ -53,7 +53,7 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 测试二维数组访问速度，逐行访问较逐列访问速度更快（由于缓存的影响）
+        /// 测试二维数组访问速度，逐行访问较逐列访问速度更快（这是由于缓存Cache命中率的影响）
         /// </summary>
         public void Test4()
         {
