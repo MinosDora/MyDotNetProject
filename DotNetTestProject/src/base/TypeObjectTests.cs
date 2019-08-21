@@ -12,7 +12,7 @@ namespace DotNetTestProject
         /// </summary>
         public void Test1()
         {
-            new MyClass();
+            new MyClass();  //DotNetTestProject.TypeObjectTests+MyClass
         }
         class MyBaseClass
         {
