@@ -19,6 +19,11 @@ namespace DotNetTestProject
             });
             thread.Start();
             MyClass.MyFunc();
+            Console.WriteLine($"The main thread Id is {Thread.CurrentThread.ManagedThreadId}.");
+            //MyClass's static constructor called, Thread Id is 1.
+            //MyFunc called, Thread Id is 1.
+            //The main thread Id is 1.
+            //MyFunc called, Thread Id is 3.
         }
 
         public class MyClass
