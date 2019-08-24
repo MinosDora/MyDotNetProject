@@ -36,7 +36,6 @@ namespace DotNetTestProject
                 strings[i] = string.Empty;
             }
             Console.WriteLine(string.Join(",", strings));
-            TypeLayout.PrintLayout<Array>();
         }
 
         /// <summary>
