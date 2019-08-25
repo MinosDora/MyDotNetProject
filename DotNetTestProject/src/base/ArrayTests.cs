@@ -22,6 +22,13 @@ namespace DotNetTestProject
             }
             Console.WriteLine(string.Join(",", ints));
             TypeLayout.PrintLayout<Array>();
+            //Size: 8 bytes.Paddings: 0 bytes(% 0 of empty space)
+            //|============================|
+            //|   Object Header(8 bytes)   |
+            //|----------------------------|
+            //|  Method Table Ptr(8 bytes) |
+            //|============================|
+            //|============================|
         }
 
         /// <summary>
