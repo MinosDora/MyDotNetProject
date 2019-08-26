@@ -91,6 +91,18 @@ namespace DotNetTestProject
             Console.WriteLine(str6);
             Console.WriteLine(str7);
             TypeLayout.PrintLayout<string>();
+            //Size: 8 bytes.Paddings: 2 bytes(% 25 of empty space)
+            //|=======================================|
+            //|        Object Header(8 bytes)         |
+            //|---------------------------------------|
+            //|      Method Table Ptr(8 bytes)        |
+            //|=======================================|
+            //| 0 - 3: Int32 m_stringLength(4 bytes)  |
+            //|---------------------------------------|
+            //|   4 - 5: Char m_firstChar(2 bytes)    |
+            //|---------------------------------------|
+            //|      6 - 7: padding(2 bytes)          |
+            //|=======================================|
         }
 
         /// <summary>
