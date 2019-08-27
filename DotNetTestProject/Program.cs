@@ -61,6 +61,7 @@ namespace DotNetTestProject
             //new ReflectionTests().Test1();
             //new ReflectionTests().CodeSnippet1();
             //new TypeObjectTests().Test1();
+            //new TypeObjectTests().Test2();
             //new GCTests().Test1();
             #endregion
 
