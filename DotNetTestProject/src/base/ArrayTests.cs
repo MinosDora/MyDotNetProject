@@ -60,6 +60,7 @@ namespace DotNetTestProject
 
         /// <summary>
         /// 测试二维数组访问速度，逐行访问较逐列访问速度更快（这是由于缓存Cache命中率的影响）
+        /// 在Intel i7-8700中，逐列访问较逐行访问用时长约2倍
         /// </summary>
         public void Test4()
         {
@@ -73,7 +74,7 @@ namespace DotNetTestProject
                     ints[i, j] = 10;
                 }
             }
-            //逐行访问
+            //逐行访问，约40毫秒
             using (StopwatchUtil.CreateStopwatch())
             {
                 for (int i = 0; i < length; i++)
@@ -84,7 +85,7 @@ namespace DotNetTestProject
                     }
                 }
             }
-            //逐列访问
+            //逐列访问，约120毫秒
             using (StopwatchUtil.CreateStopwatch())
             {
                 for (int i = 0; i < length; i++)
