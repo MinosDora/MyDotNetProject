@@ -19,11 +19,11 @@ namespace DotNetTestProject
             Console.WriteLine(*(firstBytePtr + 1));
             Console.WriteLine(*(firstBytePtr + 2));
             Console.WriteLine(*(firstBytePtr + 3));
-            if (*firstBytePtr == num)
+            if (*firstBytePtr == num)   //小端字节序
             {
                 Console.WriteLine("Littile Endian");
             }
-            else
+            else   //大端字节序
             {
                 Console.WriteLine("Big Endian");
             }
