@@ -25,7 +25,6 @@ namespace DotNetTestProject
                 Console.WriteLine("Deserialize Success");
             }
         }
-
         [ProtoContract]
         private class MyClass
         {
