@@ -1,6 +1,6 @@
-﻿using MinoTool;
+﻿using System;
+using MinoTool;
 using ObjectLayoutInspector;
-using System;
 
 namespace DotNetTestProject
 {
