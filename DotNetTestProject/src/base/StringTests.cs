@@ -1,6 +1,6 @@
-﻿using ObjectLayoutInspector;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using ObjectLayoutInspector;
 
 namespace DotNetTestProject
 {
