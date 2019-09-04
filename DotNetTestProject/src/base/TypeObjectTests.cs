@@ -27,6 +27,9 @@ namespace DotNetTestProject
 
         }
 
+        /// <summary>
+        /// 获取类型对象实际类型RuntimeType的结构
+        /// </summary>
         public void Test2()
         {
             TypeLayout.PrintLayout(typeof(int).GetType());
@@ -49,7 +52,6 @@ namespace DotNetTestProject
             //|------------------------------------------------------|
             //| 36 - 39: padding(4 bytes)                            |
             //|======================================================|
-
         }
     }
 }
