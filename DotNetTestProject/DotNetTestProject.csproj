@@ -55,12 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\base\ArrayTests.cs" />
-    <Compile Include="src\base\BitConverterTests.cs" />
+    <Compile Include="src\fcl\BitConverterTests.cs" />
     <Compile Include="src\base\BoxAndUnBoxTests.cs" />
     <Compile Include="src\base\CollectionTests.cs" />
     <Compile Include="src\base\ConstructorTests.cs" />
     <Compile Include="src\base\CovarianceTests.cs" />
-    <Compile Include="src\base\DateTimeTests.cs" />
+    <Compile Include="src\fcl\DateTimeTests.cs" />
     <Compile Include="src\base\DelegateTests.cs" />
     <Compile Include="src\base\EnumTests.cs" />
     <Compile Include="src\base\ExceptionTests.cs" />
