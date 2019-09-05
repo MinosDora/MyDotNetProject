@@ -93,6 +93,10 @@ namespace DotNetTestProject
             //MinoToolTests.StopwatchUtilTests.CreateStopwatchTest();
             #endregion
 
+            #region Other Tests
+            //new ContractTests().Test1();
+            #endregion
+
             Console.Read();
         }
         

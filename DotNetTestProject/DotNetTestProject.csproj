@@ -72,6 +72,7 @@
     <Compile Include="src\base\PrimitiveTypeTests.cs" />
     <Compile Include="src\base\PropertyTests.cs" />
     <Compile Include="src\base\StructTests.cs" />
+    <Compile Include="src\other\ContractTests.cs" />
     <Compile Include="src\other\JsonDotNetTests.cs" />
     <Compile Include="src\MinoToolTests.cs" />
     <Compile Include="src\base\ObjectCopyTests.cs" />
