@@ -68,6 +68,8 @@ namespace DotNetTestProject
             #region .Net Framework Library Tests
             //new DateTimeTests().Test1();
             //new BitConverterTests().CodeSnippet1();
+            //new ListTests().Test1();
+            //new ListTests().Test2();
             #endregion
 
             #region Commonly Library Tests
@@ -99,6 +101,6 @@ namespace DotNetTestProject
 
             Console.Read();
         }
-        
+
     }
 }
