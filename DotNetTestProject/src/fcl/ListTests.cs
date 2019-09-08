@@ -29,11 +29,11 @@ namespace DotNetTestProject
             int value = 4;
             int index = list.BinarySearch(value);  //二分查找未找到时的返回值为负值，其反码（~value）为插入该值时保证列表排序的索引
             Console.WriteLine(index);  //-4
-            if (index >= 0)
+            if (index >= 0)  //大于等于0正常插入
             {
                 list.Insert(index, value);
             }
-            else
+            else  //小于0取反后插入
             {
                 list.Insert(~index, value);
             }
