@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
 using MinoTool;
 using ObjectLayoutInspector;
 
@@ -96,6 +99,49 @@ namespace DotNetTestProject
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// 测试TrySZReverse的条件，基元类型的SZ数组可以，自定义类型不可以
+        /// </summary>
+        public void Test5()
+        {
+            MethodInfo methodInfo = typeof(Array).GetMethod("TrySZReverse", BindingFlags.NonPublic | BindingFlags.Static);
+            int[] ints = new int[] { 1, 2, 3, 4, 5 };
+            bool result = (bool)methodInfo.Invoke(null, new object[] { ints, 0, 5 });
+            Console.WriteLine(result);  //True
+            Console.WriteLine(string.Join(",", ints));  //5,4,3,2,1
+
+            MyStruct1[] myStruct1s = new MyStruct1[] { new MyStruct1 { Key = 1 }, new MyStruct1 { Key = 2 }, new MyStruct1 { Key = 3 } };
+            result = (bool)methodInfo.Invoke(null, new object[] { myStruct1s, 0, 3 });
+            Console.WriteLine(result);  //False
+            Console.WriteLine(string.Join(",", myStruct1s));  //1,2,3
+            Console.WriteLine(myStruct1s.GetValue(0));
+            Array.Reverse(myStruct1s);  //无法使用CLR默认实现，效率较差
+        }
+        private struct MyStruct1
+        {
+            public long Key;
+            public override string ToString()
+            {
+                return Key.ToString();
+            }
+        }
+
+        /// <summary>
+        /// 测试数组是否为SZ数组（single-dimensional w/ zero as the lower bound，Single-dimensional, Zero-based，即一维且以0为下限，一维零基），w/ = with
+        /// </summary>
+        public void Test6()
+        {
+            Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[])));  //True
+            Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(MyStruct1[])));  //True
+            Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[][])));  //True
+            Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[,])));  //False，二维数组
+        }
+        private static bool IsSingleDimensionalZeroBasedArray(Type type)
+        {
+            //type.GetArrayRank()可以获取数组的维度，但不能判断是否为零基
+            return type != null && type.IsArray && type == type.GetElementType().MakeArrayType();
         }
     }
 }
