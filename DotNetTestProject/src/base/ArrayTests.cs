@@ -135,7 +135,7 @@ namespace DotNetTestProject
         {
             Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[])));  //True
             Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(MyStruct1[])));  //True
-            Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[][])));  //True
+            Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[][])));  //True，交错数组本质上是数组的数组，因此也是一维数组
             Console.WriteLine(IsSingleDimensionalZeroBasedArray(typeof(int[,])));  //False，二维数组
         }
         private static bool IsSingleDimensionalZeroBasedArray(Type type)
