@@ -114,7 +114,6 @@ namespace DotNetTestProject
             result = (bool)methodInfo.Invoke(null, new object[] { myStruct1s, 0, 3 });
             Console.WriteLine(result);  //False
             Console.WriteLine(string.Join(",", myStruct1s));  //1,2,3
-            Console.WriteLine(myStruct1s.GetValue(0));
             Array.Reverse(myStruct1s);  //无法使用CLR默认实现，效率较差
         }
         private struct MyStruct1
