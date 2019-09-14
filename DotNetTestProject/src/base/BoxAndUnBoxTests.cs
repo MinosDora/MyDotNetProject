@@ -15,13 +15,13 @@ namespace DotNetTestProject
             int myNum = 1;
             object myObj = myNum;
             IEquatable<int> equatable = myNum;
-            Console.WriteLine(myNum.GetType());
-            Console.WriteLine(myObj.GetType());
-            Console.WriteLine(equatable.GetType());
+            Console.WriteLine(myNum.GetType());  //System.Int32
+            Console.WriteLine(myObj.GetType());  //System.Int32
+            Console.WriteLine(equatable.GetType());  //System.Int32
             MyEnum myEnum = MyEnum.MyEnum_1;
             object myEnumObj = myEnum;
-            Console.WriteLine(myEnum.GetType());
-            Console.WriteLine(myEnumObj.GetType());
+            Console.WriteLine(myEnum.GetType());  //DotNetTestProject.BoxAndUnBoxTests+MyEnum
+            Console.WriteLine(myEnumObj.GetType());  //DotNetTestProject.BoxAndUnBoxTests+MyEnum
         }
 
         /// <summary>
