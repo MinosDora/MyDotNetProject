@@ -82,7 +82,7 @@ namespace DotNetTestProject
                 {
                     for (int j = 0; j < length; j++)
                     {
-                        ints[i, j] = 10;  //快
+                        ints[i, j] = 10;  //较快
                     }
                 }
             }
@@ -93,7 +93,7 @@ namespace DotNetTestProject
                 {
                     for (int j = 0; j < length; j++)
                     {
-                        ints[j, i] = 10;  //慢
+                        ints[j, i] = 10;  //较慢
                     }
                 }
             }
