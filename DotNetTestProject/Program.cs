@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DotNetTestProject
 {
@@ -72,6 +73,7 @@ namespace DotNetTestProject
             //new BitConverterTests().CodeSnippet1();
             //new ListTests().Test1();
             //new ListTests().Test2();
+            //new DictionaryTests().Test1();
             #endregion
 
             #region Commonly Library Tests

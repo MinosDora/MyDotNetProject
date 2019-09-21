@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace DotNetTestProject
 {
+    /// <summary>
+    /// List
+    /// </summary>
     public class ListTests
     {
         /// <summary>
