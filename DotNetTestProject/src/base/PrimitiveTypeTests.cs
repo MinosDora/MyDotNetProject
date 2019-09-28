@@ -17,5 +17,16 @@ namespace DotNetTestProject
             Console.WriteLine(charA + 1);           //66，char和int相加，char会隐式转换为int，然后执行相加操作，返回int
             Console.WriteLine((char)(charA + 1));   //B，接上，返回的int值强制转换为char类型输出
         }
+
+        /// <summary>
+        /// 测试两个字符的UTF-16字符
+        /// </summary>
+        public void Test2()
+        {
+            Console.WriteLine(sizeof(char));    //2
+            //char charA = '𠬠';   //需要两个UTF-16字符，无法赋值给char
+            string str = "𠬠";
+            Console.WriteLine(str.Length);      //2
+        }
     }
 }
