@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace DotNetTestProject
 {
@@ -10,6 +9,7 @@ namespace DotNetTestProject
             #region Base Tests
             //new PrimitiveTypeTests().Test1();
             //new PrimitiveTypeTests().Test2();
+            //new PrimitiveTypeTests().Test3();
             //new OperatorTests().Test1();
             //new OperatorTests().Test2();
             //new OperatorTests().Test3();

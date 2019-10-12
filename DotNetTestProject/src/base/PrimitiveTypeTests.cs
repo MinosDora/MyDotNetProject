@@ -28,5 +28,26 @@ namespace DotNetTestProject
             string str = "𠬠";
             Console.WriteLine(str.Length);      //2
         }
+
+        /// <summary>
+        /// 测试溢出检查
+        /// </summary>
+        public void Test3()
+        {
+            byte a = 100;
+            byte b = (byte)(a + 200);
+            Console.WriteLine(b);
+            try
+            {
+                checked
+                {
+                    b = (byte)(a + 200);
+                }
+            }
+            catch (OverflowException ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
     }
 }
