@@ -45,6 +45,7 @@ namespace DotNetTestProject
             //new ArrayTests().Test4();
             //new ArrayTests().Test5();
             //new ArrayTests().Test6();
+            //new ArrayTests().Test7();
             //new RefLocalsAndRefReturnsTests().CodeSnippet1();
             //new OOPTests().Test1();
             //new ObjectCopyTests().Test1();

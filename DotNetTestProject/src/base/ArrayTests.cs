@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Reflection;
 using MinoTool;
 using ObjectLayoutInspector;
@@ -126,7 +127,7 @@ namespace DotNetTestProject
         }
 
         /// <summary>
-        /// 测试数组是否为SZ数组（single-dimensional w/ zero as the lower bound，Single-dimensional, Zero-based，即一维且以0为下限，一维零基），w/ = with
+        /// 测试数组是否为SZ数组（single-dimensional w/ zero as the lower bound，Single-dimensional, Zero-based，即一维且以0为下限，一维零基）
         /// </summary>
         public void Test6()
         {
@@ -139,6 +140,27 @@ namespace DotNetTestProject
         {
             //type.GetArrayRank()可以获取数组的维度，但不能判断是否为零基
             return type != null && type.IsArray && type == type.GetElementType().MakeArrayType();
+        }
+
+        /// <summary>
+        /// 测试编译时类型为数组类型和其它类型时的编译器优化
+        /// </summary>
+        public void Test7()
+        {
+            int[] ints = new int[10];
+            int result = 0;
+            //会优化为for循环
+            foreach (var item in ints)
+            {
+                result += item;
+            }
+
+            IEnumerable enumerables = ints;
+            //不会进行任何优化，使用迭代器进行循环
+            foreach (var item in enumerables)
+            {
+                result += (int)item;
+            }
         }
     }
 }
