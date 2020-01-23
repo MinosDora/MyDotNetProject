@@ -205,5 +205,13 @@ namespace DotNetTestProject
                 return @char >= 'A' && @char <= 'Z';
             }
         }
+
+        /// <summary>
+        /// 测试退格符
+        /// </summary>
+        public void Test10()
+        {
+            Console.WriteLine("haha\bhaha");    //hahhaha
+        }
     }
 }
