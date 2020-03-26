@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\base\ArrayTests.cs" />
+    <Compile Include="src\base\IndexerTests.cs" />
     <Compile Include="src\fcl\DictionaryTests.cs" />
     <Compile Include="src\fcl\BitConverterTests.cs" />
     <Compile Include="src\base\BoxAndUnBoxTests.cs" />
