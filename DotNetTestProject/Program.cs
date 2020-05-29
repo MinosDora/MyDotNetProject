@@ -107,6 +107,11 @@ namespace DotNetTestProject
             //new ContractTests().Test1();
             #endregion
 
+            #region Interop Tests
+            //new InteropTests().Test1();
+            //new InteropTests().Test2();
+            #endregion
+
             Console.Read();
         }
 
