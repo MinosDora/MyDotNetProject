@@ -3,6 +3,9 @@ using System.Diagnostics.Contracts;
 
 namespace DotNetTestProject
 {
+    /// <summary>
+    /// 协定
+    /// </summary>
     public class ContractTests
     {
         /// <summary>

@@ -112,6 +112,10 @@ namespace DotNetTestProject
             //new InteropTests().Test2();
             #endregion
 
+            #region Performance Tests
+            //new ObjectMemoryTests().Test1();
+            #endregion
+
             Console.Read();
         }
 

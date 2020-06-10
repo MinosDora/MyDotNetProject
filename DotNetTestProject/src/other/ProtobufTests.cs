@@ -4,6 +4,9 @@ using ProtoBuf;
 
 namespace DotNetTestProject
 {
+    /// <summary>
+    /// Protobuf
+    /// </summary>
     public class ProtobufTests
     {
         /// <summary>

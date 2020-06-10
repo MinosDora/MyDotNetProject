@@ -92,6 +92,7 @@
     <Compile Include="src\base\TypeObjectTests.cs" />
     <Compile Include="src\base\UnsafeCodeTests.cs" />
     <Compile Include="src\base\VariableTests.cs" />
+    <Compile Include="src\perf\ObjectMemoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
