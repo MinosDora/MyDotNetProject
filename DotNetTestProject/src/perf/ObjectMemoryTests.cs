@@ -23,11 +23,52 @@ namespace DotNetTestProject
                                         //然后右键选择8字节整型，十六进制显示，Unicode文本，然后输入obj1即可查看该变量的内存地址及对应的值
             }
         }
-        public class MyClass
+        private class MyClass
         {
             public static int StaticNum = 0b10101010;
             public int MyNum;
             public MyClass(int num) => MyNum = num;
+        }
+
+        /// <summary>
+        /// 测试堆内存上的对象在获取一次哈希值时会将其哈希值保存在同步索引块上，在获取锁后会回复
+        /// </summary>
+        public void Test2()
+        {
+            MyClass1 myClass = new MyClass1();
+            int hashCode = myClass.GetHashCode();
+            Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(hashCode)));
+            //98-80-BF-02
+            //1001 1000 1000 0000 1011 1111 0000 0010
+            unsafe
+            {
+                fixed (long* p = &myClass.myNum)
+                {
+                    Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(*(p - 2))));
+                    //00-00-00-00-98-80-BF-0E
+                    //1001 1000 1000 0000 1011 1111 0000 1110
+
+                    //TODO
+                    //* (p - 2) = 0;
+                    //Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(myClass.GetHashCode())));
+                }
+            }
+            lock (myClass)
+            {
+                unsafe
+                {
+                    fixed (long* p = &myClass.myNum)
+                    {
+                        Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(*(p - 2))));
+                        //00-00-00-00-01-00-00-08
+                        //0001 0000 0000 0000 0000 0000 1000
+                    }
+                }
+            }
+        }
+        private class MyClass1
+        {
+            public long myNum;
         }
     }
 }
