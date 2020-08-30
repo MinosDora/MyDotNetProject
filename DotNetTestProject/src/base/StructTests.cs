@@ -7,7 +7,6 @@ namespace DotNetTestProject
     /// </summary>
     public class StructTests
     {
-
         /// <summary>
         /// 结构定义的最佳实践
         /// </summary>
@@ -45,6 +44,18 @@ namespace DotNetTestProject
             {
                 return !(left == right);
             }
+        }
+
+        /// <summary>
+        /// 测试空结构体使用sizeof运算符时获取的大小
+        /// </summary>
+        public unsafe void Test1()
+        {
+            Console.WriteLine(sizeof(MyStruct1));  //1
+        }
+        private struct MyStruct1
+        {
+
         }
     }
 }

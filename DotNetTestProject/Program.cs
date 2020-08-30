@@ -10,6 +10,7 @@ namespace DotNetTestProject
             //new PrimitiveTypeTests().Test1();
             //new PrimitiveTypeTests().Test2();
             //new PrimitiveTypeTests().Test3();
+            //new StructTests().Test1();
             //new OperatorTests().Test1();
             //new OperatorTests().Test2();
             //new OperatorTests().Test3();
@@ -114,7 +115,7 @@ namespace DotNetTestProject
 
             #region Performance Tests
             //new ObjectMemoryTests().Test1();
-            new ObjectMemoryTests().Test2();
+            //new ObjectMemoryTests().Test2();
             #endregion
 
             Console.Read();
