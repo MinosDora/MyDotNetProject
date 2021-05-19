@@ -106,6 +106,8 @@ namespace DotNetTestProject
 
             #region Other Tests
             //new ContractTests().Test1();
+            //new UndocumentedKeywordsTests().Test1();
+            //new UndocumentedKeywordsTests().Test2();
             #endregion
 
             #region Interop Tests
